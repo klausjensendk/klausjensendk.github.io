@@ -1,0 +1,40 @@
+/* index.html */
+
+*{margin: 0; padding: 0;}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+a:hover{
+	color: rgb(179, 91, 91);
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.content{
+	margin: 0 10em;
+	padding: 1em 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.content:nth-child(3){
+    background-color: red;
+}
+
+.top{
+	margin: 0 10em 0 0; 
+    width: 30%;
+	padding: 0.5em 0;
+	border-bottom: 1px solid #ccc;
+
+}
+
+.headline{
+    font-size: 2em;
+}

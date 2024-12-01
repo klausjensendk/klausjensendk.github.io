@@ -119,6 +119,7 @@ body{
 	margin: 0;
 	font-size: 35px;
 	font-weight: bold;
+
 }
 
 .container #headline:nth-child(even){
@@ -311,5 +312,11 @@ details[open] summary {
 	#box{
 		width: 100%;
 		background-color: rgba(217, 207, 246, 0);
+	}
+
+	#headline{
+		font-size: 25px;
+
+	
 	}
 }

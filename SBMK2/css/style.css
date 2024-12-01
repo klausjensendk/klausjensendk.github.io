@@ -88,14 +88,14 @@ body{
 	position: absolute;
 	margin: 0;
 	left: 0;
-	1font-size: 20px;
+
 }
 
 #nav-sticky{
 	position: sticky;
 	top: 0px;
 	z-index: 999;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(226, 19, 19);
 }
 
 #nav-sticky li{

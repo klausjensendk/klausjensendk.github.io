@@ -36,13 +36,12 @@ body{
 }
 
 .box{
-	background-color: rgba(89, 8, 249, 0.886);
 	padding: 1em;
-	margin: 1em 1em 0 0;
+	margin: 1em 0em 0 0;
 }
 
 .wide{
-	background-color: #c4bcbc17;
+	background-color: #c4bcbc10;
 	padding: 1em;
 	margin: 1em 1em 0 0;
 	width: 100%;
@@ -50,7 +49,7 @@ body{
 }
 
 #nav{
-	background-color: rgb(255, 255, 255);
+	background-color: #ffffff;
 }
 
 #nav.sticky{
@@ -61,29 +60,32 @@ body{
 
 #nav .box{
 	text-transform: capitalize;
-	background-color: #c4bcbc17;
+	background-color: #c4bcbc10;
 }
 
 #main .box{
-	background-color: #c4bcbc17;
-	width: 350px;
-	min-height: 130px;
+	background-color: #ffffffdd;
+	width: 100%;
+	min-height: 30px;
+	height: auto;
 }
 
+
 .article{
-	background-color: rgba(0, 255, 255, 0);
-	border-top: 1px solid #c4bcbc3b;
+	background-color: #c4bcbc00;
+	border: 1px solid #ceaaaa99;
 	float: right;
-	width: 100%;
+	width: 31%;
 	margin: 1em 1em 0 0;
 
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	align-items:stretch;
 }
 
 .headline{
-	background-color: rgba(0, 255, 255, 0);
+	background-color: #c4bcbc10;
 	padding: 1em;
 	margin: 1em 1em 0 0;
 	width: 100%;
@@ -112,18 +114,66 @@ font-weight: 700;
 	margin: 0 1em 0 0;
 }
 
-@media only screen and (max-width: 1600px) {
+#main2 .article {
+	width: 100%;
+	border: none;
+	border-top: 1px solid #ceaaaa99;
+	padding: 1em 0 4em 0;
+	background-color: #000000;
+	color: #ffffff;
+}
 
+@media only screen and (max-width: 2800px) {
+	.container{
+		width: 75%;
+
+		background-color: rgba(250, 254, 5, 0);
+	}
+
+	.article{
+		width: 24%;
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	.container{
+		width: 90%;
+
+		background-color: rgba(254, 5, 5, 0);
+	}
+
+	.article{
+		width: 31%;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
+	.container{
+		width: 90%;
+				background-color: rgba(5, 55, 254, 0);
+	}
 
+	.article{
+		width: 48%;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
+	.container{
+		width: 100%;
+	}
 
+	.article{
+		width: 48%;
+	}
 }
 
 @media only screen and (max-width: 800px) {
+	.container{
+		width: 100%;
+	}
 
+	.article{
+		width: 100%;
+	}
 }

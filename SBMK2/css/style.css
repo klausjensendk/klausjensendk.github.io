@@ -127,11 +127,11 @@ font-weight: 700;
 	.container{
 		width: 75%;
 
-		background-color: rgba(250, 254, 5, 0);
+		background-color: rgb(16, 243, 239);
 	}
 
 	.article{
-		width: 24%;
+		width: 31%;
 	}
 }
 
@@ -139,7 +139,7 @@ font-weight: 700;
 	.container{
 		width: 90%;
 
-		background-color: rgba(254, 5, 5, 0);
+		background-color: rgba(230, 14, 14, 0.865);
 	}
 
 	.article{
@@ -150,7 +150,7 @@ font-weight: 700;
 @media only screen and (max-width: 1200px) {
 	.container{
 		width: 90%;
-				background-color: rgba(5, 55, 254, 0);
+				background-color: rgba(5, 55, 254, 0.889);
 	}
 
 	.article{
@@ -161,6 +161,8 @@ font-weight: 700;
 @media only screen and (max-width: 1000px) {
 	.container{
 		width: 100%;
+
+				background-color: rgb(51, 254, 5);
 	}
 
 	.article{
@@ -171,6 +173,8 @@ font-weight: 700;
 @media only screen and (max-width: 800px) {
 	.container{
 		width: 100%;
+
+				background-color: rgb(250, 254, 5);
 	}
 
 	.article{

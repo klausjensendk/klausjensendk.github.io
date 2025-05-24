@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0;}
+
+body{
+    font-family: "DM Serif Text", serif;
+}
+
+.box1{
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.box2{
+    width: 45%;
+    background-color: rgba(201, 31, 31, 0);
+    float: left;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.box2:nth-child(2){
+    width: 50%;
+    padding: 0;
+    height: 300px;
+    overflow: hidden;
+}
+
+.box2 img{
+
+
+    object-fit: fill;
+}
+
+.box3{
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em;
+    background-color: rgba(201, 31, 31, 0);
+    float: left;
+    border-bottom: 1px solid #ccc;
+
+}
+
+font-family: "Roboto Condensed", serif;
+
+font-family: "DM Serif Text", serif;
+
+
+font-family: "Pacifico", serif;

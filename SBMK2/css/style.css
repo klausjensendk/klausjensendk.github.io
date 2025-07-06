@@ -8,15 +8,9 @@ a{
 	color: rgb(0, 0, 0);
 }
 
-/*
-
-font-family: "Roboto", sans-serif;
-	font-family: "Bebas Neue",
-*/
 ::selection {
 	color: rgb(0, 0, 0);
 	background: rgb(186, 244, 14);
-
 }
 
 body{
@@ -32,7 +26,6 @@ body{
 	margin: 1em;
 	padding: 1em;
 	width: auto;
-	1border: 1px solid #ddd;
 
 	display: flex;
 	flex-direction: row;
@@ -79,9 +72,6 @@ body{
 	margin: 0 0 0.5em 0;
 	padding: 0.5em 0;
 	text-transform: capitalize;
-
-	
-
 }
 
 .title{
@@ -89,7 +79,6 @@ body{
 	font-weight: 500;
 	text-transform: capitalize;
 	font-family: "Bebas Neue", sans-serif;
-
 }
 
 .headline{
@@ -99,7 +88,6 @@ body{
 	font-family: "Bebas Neue", sans-serif;
 	color: red;
 	font-weight: 300;
-
 }
 
 .tag{
@@ -122,48 +110,46 @@ body{
 	overflow: hidden;
 	width: 100%;
 	max-height: 250px;
-	
 }
 
 .photo img{
 	display: block;
 	margin: auto;
 	width: 100%;
-	
 }
-
-
-
 
 
 @media only screen and (max-width: 2800px) {
-.thirty{
-	width: 19%;
-	background-color: rgba(255, 0, 0, 0);
+	.thirty{
+		width: 19%;
+		background-color: rgba(255, 0, 0, 0);
+	}
 }
 
 @media only screen and (max-width: 1600px) {
-.thirty{
-	width: 23%;
-	background-color: rgba(0, 255, 13, 0);
+	.thirty{
+		width: 23%;
+		background-color: rgba(0, 255, 13, 0);
+	}
 }
 
 @media only screen and (max-width: 1200px) {
-.thirty{
-	width: 31%;
-	background-color: rgba(255, 0, 212, 0);
+	.thirty{
+		width: 31%;
+		background-color: rgba(255, 0, 212, 0);
+	}
 }
 
 @media only screen and (max-width: 1000px) {
-.thirty{
-	width: 48%;
-	background-color: rgba(246, 255, 0, 0);
+	.thirty{
+		width: 48%;
+		background-color: rgba(246, 255, 0, 0);
+	}
 }
 
 @media only screen and (max-width: 800px) {
-.thirty{
-	width: 100%;
-	background-color: rgba(0, 149, 255, 0);
-}
+	.thirty{
+		width: 100%;
+		background-color: rgba(0, 149, 255, 0);
 	}
 }

@@ -32,6 +32,7 @@ body{
 	flex-wrap: wrap;
 }
 
+
 .hundred{
 	margin: 0 1em 0.5em 0;
 	padding: 1em 0;
@@ -41,10 +42,17 @@ body{
 
 .hundred a{
 	margin: 0 1em 0 0;
+
 }
 
 #left{
 	float: left;
+}
+
+#left a:hover{
+	color: red;
+	border-bottom: 1px solid red;
+
 }
 
 #right{
@@ -60,6 +68,10 @@ body{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+}
+
+.thirty:hover{
+	border-bottom: 1px solid red;
 }
 
 .hundred:nth-child(2){
@@ -86,14 +98,16 @@ body{
 	font-size: 1.4em;
 	text-transform: capitalize;
 	font-family: "Bebas Neue", sans-serif;
-	color: red;
 	font-weight: 300;
 }
 
+
+
 .tag{
-	width: auto;
+	width: fit-content;
 	margin: 0 1em 0 0;
 	padding: 0.1em 0.8em 0 0;
+	float: left;
 	font-size: 0.8em;
 	border-right: 1px solid #ccc;
 	text-transform: capitalize;
@@ -124,6 +138,7 @@ body{
 		width: 19%;
 		background-color: rgba(255, 0, 0, 0);
 	}
+
 }
 
 @media only screen and (max-width: 1600px) {
@@ -131,6 +146,7 @@ body{
 		width: 23%;
 		background-color: rgba(0, 255, 13, 0);
 	}
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -138,6 +154,7 @@ body{
 		width: 31%;
 		background-color: rgba(255, 0, 212, 0);
 	}
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -145,6 +162,7 @@ body{
 		width: 48%;
 		background-color: rgba(246, 255, 0, 0);
 	}
+
 }
 
 @media only screen and (max-width: 800px) {

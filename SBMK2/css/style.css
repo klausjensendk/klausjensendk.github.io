@@ -8,6 +8,11 @@ a{
 	color: rgb(0, 0, 0);
 }
 
+/*
+
+font-family: "Roboto", sans-serif;
+	font-family: "Bebas Neue",
+*/
 ::selection {
 	color: rgb(0, 0, 0);
 	background: rgb(186, 244, 14);
@@ -15,10 +20,7 @@ a{
 }
 
 body{
-	font-family: "Playfair Display", serif;
-	font-family: "Outfit", sans-serif;
-	font-family: "Outfit", sans-serif;
-
+	font-family: "Roboto", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 300;
 	font-style: normal;
@@ -26,161 +28,142 @@ body{
 	background-color: #ffffff;
 }
 
-.boxpropbottom{
-	border-bottom: 1px;
-	border-top: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #b1b1b1;
-}
-
 .container{
 	margin: 1em;
 	padding: 1em;
-	float: left;
-	width: 94%;
+	width: auto;
+	1border: 1px solid #ddd;
 
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.container:nth-child(2){
-	margin: 1em;
-	padding: 1em;
-	background-color: rgb(255, 255, 255);
-	width: 94%;
-	color: rgb(0, 0, 0);
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#sidebar{
-	background-color: rgba(250, 235, 215, 0);
-	width: 15%;
-	max-width: 20%;
-	float: left;
-	z-index: -1;
-	text-transform: capitalize;
-
-}
-
-#sidebar img{
-
+.hundred{
+	margin: 0 1em 0.5em 0;
+	padding: 1em 0;
 	width: 100%;
-	max-width: 90%;
-
-
+	border-bottom: 1px solid #ddd;
 }
 
-.sidebarpost{
-	padding: 1em 1em 1em 0;
-	width: 80%;
-	font-size: small;
+.hundred a{
+	margin: 0 1em 0 0;
 }
 
-.sticky{
-	position: sticky;
-	top: 0;
+#left{
+	float: left;
 }
 
-#postcontainer{
-	background-color: rgb(255, 255, 255);
-	width: 84%;
-	max-width: 900px;
+#right{
 	float: right;
-	background-color: rgb(255, 255, 255);
-	border-left: 1px solid #b1b1b1;
-	
+}
+
+.thirty{
+	margin: 0 1em 0.5em 0;
+	padding: 1em 0;
+	width: 29%;
+	border-bottom: 1px solid #ddd;
+
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.headline:nth-child(1){
-	position: sticky;
-	top: 0;
+.hundred:nth-child(2){
+	margin: ;
+	background-color: rgba(255, 0, 0, 0);
 }
 
-.post{
-	margin: 0 1em;
-	padding: 1em 0;
+.headline, .tag, .text, .photo{
 	width: 100%;
-	font-size: 13px;
-	column-count: 2;
-
-}
-
-.photobar{
-	margin: 0 1em;
-	padding: 1em 0;
-	width: 100%;
-}
-
-.photobar img{
-	margin: 0 0 0 1em;
-	max-width: 150px;
-	max-height: 150px;
-}
-
-.photobar img:nth-child(1){
-	margin: 0 0 0 0;
-
-}
-
-.tags{
-	margin: 0 0 0 1em;
-	padding: 1em 0;
-	font-size: smaller;
-	color: grey;
+	margin: 0 0 0.5em 0;
+	padding: 0.5em 0;
 	text-transform: capitalize;
-}
 
-.headline{
-	margin: 0 1em;
-	padding: 1em 0;
-	width: 100%;
-	text-transform: capitalize;
-	font-weight: 700;
-}
+	
 
-.headline:first-child{
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-	padding: 1em 0 1em 1em;
-	margin: 0;
-	border: none;
 }
 
 .title{
-	background-color: rgb(255, 255, 255);
-	margin: 0 ;
-	padding:  1em 0.65em;
-	width: 100%;
+	font-size: 2em;
+	font-weight: 500;
 	text-transform: capitalize;
-	font-weight: 900;
-	font-size: 20px;
+	font-family: "Bebas Neue", sans-serif;
 
 }
 
-@media only screen and (max-width: 2800px) {
+.headline{
+	margin: 0;
+	font-size: 1.4em;
+	text-transform: capitalize;
+	font-family: "Bebas Neue", sans-serif;
+	color: red;
+	font-weight: 300;
 
+}
+
+.tag{
+	width: auto;
+	margin: 0 1em 0 0;
+	padding: 0.1em 0.8em 0 0;
+	font-size: 0.8em;
+	border-right: 1px solid #ccc;
+	text-transform: capitalize;
+}
+
+.text{
+	max-height: 150px;
+	overflow: hidden;
+	line-height: 1.5em;
+	font-size: 0.9em;
+}
+
+.photo{
+	overflow: hidden;
+	width: 100%;
+	max-height: 250px;
+	
+}
+
+.photo img{
+	display: block;
+	margin: auto;
+	width: 100%;
+	
+}
+
+
+
+
+
+@media only screen and (max-width: 2800px) {
+.thirty{
+	width: 19%;
+	background-color: rgba(255, 0, 0, 0);
 }
 
 @media only screen and (max-width: 1600px) {
-
+.thirty{
+	width: 23%;
+	background-color: rgba(0, 255, 13, 0);
 }
 
 @media only screen and (max-width: 1200px) {
-
+.thirty{
+	width: 31%;
+	background-color: rgba(255, 0, 212, 0);
 }
 
 @media only screen and (max-width: 1000px) {
-
+.thirty{
+	width: 48%;
+	background-color: rgba(246, 255, 0, 0);
 }
 
 @media only screen and (max-width: 800px) {
-
+.thirty{
+	width: 100%;
+	background-color: rgba(0, 149, 255, 0);
+}
 	}
 }

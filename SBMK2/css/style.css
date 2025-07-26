@@ -17,14 +17,9 @@ a{
 	background: rgb(186, 244, 14);
 }
 
-.nav{
-	position: sticky;
-	top: 0;
-
-	z-index: 100;
-
-	background-color: rgb(195, 246, 11);
-}
+/*
+style tags
+*/
 
 body{
 	font-family: "Roboto", sans-serif;
@@ -53,6 +48,19 @@ body{
 }
 
 
+.nav{
+	position: sticky;
+	top: 0;
+
+	background-color: #ffffff;
+
+	margin: 0 1em 0.5em 0;
+	padding: 1em 0;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+
+
 
 .hundred{
 	margin: 0 1em 0.5em 0;
@@ -65,13 +73,13 @@ body{
 	margin: 0 1em 0 0;
 }
 
-.hundred:nth-child(2){
-	margin: ;
+#left{
+	float: left;
 	background-color: rgba(255, 0, 0, 0);
 }
 
-#left{
-	float: left;
+#left a{
+	margin: 0 1em 0 0;
 }
 
 #left a:hover{
@@ -81,9 +89,10 @@ body{
 
 #right{
 	float: right;
+	margin: 0 0 0 0;
+	background-color: rgba(255, 0, 0, 0);
+
 }
-
-
 
 .thirty{
 	margin: 0 1em 0.5em 0;
@@ -162,6 +171,29 @@ body{
 /*
 recipe tags
 */
+
+
+/*
+steps same as hundred
+*/
+
+.steps{
+	margin: 0 1em 0.5em 0;
+	padding: 1em 0;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+
+.steps img{
+	width: 50%;
+
+}
+
+
+
+
+
+
 
 
 

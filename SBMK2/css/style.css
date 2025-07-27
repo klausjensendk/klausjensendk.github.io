@@ -186,13 +186,24 @@ body{
 }
 
 #recipe .thirty{
+	width: 30%;
 	font-weight: 700;
-	background-color: rgb(255, 255, 255);
+	padding: 0 0 0.5em 0;
+	background-color: rgba(133, 34, 34, 0);
 }
 
-#recipe .thirty:nth-child(2){
+#recipe .thirty:nth-child(1){
+	width: 100%;
 	font-size: 2em;
 	padding: 0 0 0.5em 0;
+	background-color: rgba(202, 38, 38, 0);
+}
+
+#recipe .thirty:nth-child(n+3){
+	float: left;
+	width: 100%;
+	font-weight: 300;
+	background-color: rgba(29, 8, 221, 0);
 }
 
 
@@ -200,12 +211,6 @@ body{
 	max-width: 15em;
 	max-height: 10em;
 	margin: 0 1em 1em 0;
-	background-color: rgb(255, 255, 255);
-}
-
-.rest{
-	float: right;
-	width: 75%;
 	background-color: rgb(255, 255, 255);
 }
 

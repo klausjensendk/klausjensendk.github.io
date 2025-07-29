@@ -124,7 +124,7 @@ body{
 	font-size: 2em;
 	font-weight: 500;
 	text-transform: capitalize;
-	font-family: "Caprasimo", serif;
+	font-family: "Cal Sans", sans-serif;
 }
 
 .title2{
@@ -135,11 +135,11 @@ body{
 	background-color: rgba(41, 192, 192, 0);
 	font-size: 5em;
 	font-weight: 300;
-	transform: rotate(-6deg);
-	transform-origin: 30% 5%;
+
+
 	z-index: 0;
-	color: rgb(206, 149, 16);
-	font-family: "Sacramento", cursive;
+	color: rgba(0, 0, 0, 0.886);
+	font-family: "Caprasimo", serif;
 }
 
 .headline{
@@ -182,44 +182,43 @@ body{
 /* recipe tags */
 
 #recipe{
-	background-color: rgb(255, 255, 255);
-}
+	min-height: 300px;
+	min-width: 300px;
+	max-height: 300px;
+	max-width: 300px;
 
-#recipe .thirty{
-	width: 30%;
-	font-weight: 700;
-	padding: 0 0 0.5em 0;
-	background-color: rgba(133, 34, 34, 0);
-}
 
-#recipe .thirty:nth-child(1){
-	width: 100%;
-	font-size: 2em;
-	padding: 0 0 0.5em 0;
-	background-color: rgba(180, 20, 20, 0);
-}
-
-#recipe .thirty:nth-child(n+3){
+	padding: 1em;
+	margin: 0 1em 1em 0;
 	float: left;
-	width: 100%;
-	font-weight: 200;
-	column-count: 12;
-	background-color: #3a34785f;
+	border: 1px solid rgb(218, 209, 209);
+	background-color: rgba(227, 227, 227, 0);
 }
-
 
 #recipe img{
-	max-width: 15em;
-	max-height: 10em;
-	margin: 0 1em 1em 0;
-	background-color: rgb(255, 255, 255);
+	width: 	auto;
+	overflow: hidden;
 }
+
+.recipeheader{
+	font-weight: 700;
+	font-size: 2em;
+	width: 100%;
+}
+
+.recipeheader section{
+	font-weight: 700;
+	font-size: 2em;
+	width: 100%;
+	background-color: red;
+}
+.
 
 #wideimg{
 	height: 20em;
 	width: 100%;
 	background-image: url("/images/1.jpg");
-	background-color: #d226264a;
+	background-color: #d226261e;
 
 	background-position: center;
 	background-repeat: no-repeat;
@@ -228,9 +227,20 @@ body{
 }
 
 
+/* art tags */
 
+#art{
+	height: auto;
+	width: auto;
+	margin: 0 0 1em 0;
+	object-fit: cover;
+	aspect-ratio: 16/16;
+	overflow: hidden;
+}
 
-
+.signature{
+	
+}
 
 
 

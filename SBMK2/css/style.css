@@ -196,14 +196,15 @@ body{
 	width: 100%;
 	font-size: 2em;
 	padding: 0 0 0.5em 0;
-	background-color: rgba(202, 38, 38, 0);
+	background-color: rgba(180, 20, 20, 0);
 }
 
 #recipe .thirty:nth-child(n+3){
 	float: left;
 	width: 100%;
-	font-weight: 300;
-	background-color: rgba(29, 8, 221, 0);
+	font-weight: 200;
+	column-count: 12;
+	background-color: #3a34785f;
 }
 
 
@@ -218,7 +219,7 @@ body{
 	height: 20em;
 	width: 100%;
 	background-image: url("/images/1.jpg");
-	background-color: #ffffff;
+	background-color: #d226264a;
 
 	background-position: center;
 	background-repeat: no-repeat;

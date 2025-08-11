@@ -1,0 +1,295 @@
+*{
+	margin: 0; 
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+::selection {
+	color: rgb(0, 0, 0);
+	background: rgb(186, 244, 14);
+}
+
+/* style tags 2*/
+
+body{
+	font-family: "Inter Tight", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	background-color: #ffffff;
+}
+
+.container{
+	margin: 0em;
+	padding: 1em 2em;
+	width: auto;
+	z-index: 1;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#about{
+	color: #ffffff;
+	background-color: rgb(242, 231, 231);
+}
+
+#bottom{
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.nav{
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: #ffffff;
+
+	margin: 0 1em 0.5em 0;
+	padding: 1em 0;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+
+.nav2{
+	margin: 0 1em 0.5em 0;
+	padding: 1em 0;
+	width: 100%;
+	text-align: ;
+	font-weight: 700;
+	border-bottom: 1px solid #ddd;
+}
+
+.hundred{
+	margin: 0 1em 0.5em 0;
+	padding: 1em 0;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+
+.hundred a{
+	margin: 0 1em 0 0;
+}
+
+#left{
+	float: left;
+	background-color: rgba(255, 0, 0, 0);
+}
+
+#left a{
+	margin: 0 1em 0 0;
+}
+
+#left a:hover{
+	color: red;
+	border-bottom: 1px solid red;
+}
+
+#right{
+	float: right;
+	margin: 0 0 0 0;
+	background-color: rgba(255, 0, 0, 0);
+}
+
+.thirty{
+	margin: 0 1em 0.5em 0;
+	padding: 1em 0;
+	width: 29%;
+	border-bottom: 1px solid #ddd;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.thirty:hover{
+	border-bottom: 1px solid red;
+}
+
+.headline, .tag, .text, .photo{
+	width: 100%;
+	margin: 0 0 0.5em 0;
+	padding: 0.5em 0;
+	text-transform: capitalize;
+	color: rgb(0, 0, 0);
+}
+
+.title{
+	font-size: 2em;
+	font-weight: 500;
+	text-transform: capitalize;
+	font-family: "Cal Sans", sans-serif;
+}
+
+.title2{
+	font-size: 2.5em;
+	font-weight: 500;
+	text-transform: capitalize;
+	overflow: hidden;
+	background-color: rgba(41, 192, 192, 0);
+	font-size: 5em;
+	font-weight: 300;
+
+
+	z-index: 0;
+	color: rgba(0, 0, 0, 0.886);
+	font-family: "Caprasimo", serif;
+}
+
+.headline{
+	margin: 0;
+	font-size: 1.4em;
+	text-transform: capitalize;
+	font-family: "Inter Tight", sans-serif;
+	font-weight: 300;
+}
+
+.tag{
+	width: fit-content;
+	margin: 0 1em 0 0;
+	padding: 0.1em 0.8em 0 0;
+	float: left;
+	font-size: 0.8em;
+	border-right: 1px solid #ccc;
+	text-transform: capitalize;
+}
+
+.text{
+	max-height: 150px;
+	overflow: hidden;
+	line-height: 1.5em;
+	font-size: 0.9em;
+}
+
+.photo{
+	overflow: hidden;
+	width: 100%;
+	max-height: 250px;
+}
+
+.photo img{
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+/* recipe tags */
+
+#recipe{
+	min-height: 400px;
+	min-width: 400px;
+	max-height: 400px;
+	max-width: 400px;
+	
+
+
+	padding: 1em;
+	margin: 0 1em 1em 0;
+	float: left;
+	border: 1px solid rgb(218, 209, 209);
+	background-color: rgba(227, 227, 227, 0);
+}
+
+#recipe img{
+	width: 	auto;
+	overflow: hidden;
+}
+
+.recipeheader{
+	font-weight: 700;
+	font-size: 2em;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 2em;
+	border-bottom: 1px solid rgb(194, 188, 188);
+		display: block;
+}
+
+
+
+.recipeheader section{
+	font-weight: 700;
+	font-size: 2em;
+	width: 100%;
+	background-color: red;
+}
+.
+
+#wideimg{
+	height: 20em;
+	width: 100%;
+	background-image: url("/images/1.jpg");
+	background-color: #d226261e;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+
+/* art tags */
+
+#art{
+	height: auto;
+	width: auto;
+	margin: 0 0 1em 0;
+	object-fit: cover;
+	aspect-ratio: 16/16;
+	overflow: hidden;
+}
+
+.signature{
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 2800px) {
+	.thirty{
+		width: 19%;
+		background-color: rgba(255, 0, 0, 0);
+	}
+
+}
+
+@media only screen and (max-width: 1600px) {
+	.thirty{
+		width: 23%;
+		background-color: rgba(0, 255, 13, 0);
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.thirty{
+		width: 31%;
+		background-color: rgba(255, 0, 212, 0);
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.thirty{
+		width: 48%;
+		background-color: rgba(246, 255, 0, 0);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.thirty{
+		width: 100%;
+		background-color: rgba(0, 149, 255, 0);
+	}
+}

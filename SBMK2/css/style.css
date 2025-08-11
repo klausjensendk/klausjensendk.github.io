@@ -188,7 +188,27 @@ body{
 }
 
 #about{
-	background-color: rgb(136, 137, 137);
+	margin: 1em 0 0 0;
+	padding: 1em 0;
+	font-size: 0.9em;
+	border-top: 1px solid rgb(235, 232, 232);
+}
+
+#about ul{
+	margin: 1em 0 0 0;
+	padding: 1em 0;
+	font-weight: 700;
+	font-size: 0.9em;
+	border-top: 1px solid rgb(235, 232, 232);
+}
+
+#about img{
+	position: relative;
+	margin: 1em 0 0 0;
+	padding: 1em 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
 }
 
 

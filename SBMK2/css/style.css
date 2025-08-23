@@ -23,7 +23,7 @@ body{
 	font-family: "Quicksand", sans-serif;
 	font-family: "Cal Sans", sans-serif;
 	font-family: "Francois One", sans-serif;
-	font-family: "Roboto", sans-serif;
+
 	font-family: "Quicksand", sans-serif;
 	font-weight: 400;
 	font-style: normal
@@ -54,6 +54,7 @@ body{
 #nav{
 	position: sticky;
 	top: 0;
+	z-index: 0;
 	background-color: white;
 }
 
@@ -110,12 +111,15 @@ body{
 
 .mainpostHeadline{
 	margin: 0 0 0.5em 0;
-	font-size: 1.5em;
+	font-size: 1.8em;
 	font-weight: 600;
+	text-transform: capitalize;
+	font-family: "Roboto", sans-serif;
 }
 
 #sectionheader{
 	text-align: center;
+	text-transform: capitalize;
 	font-weight: 300;
 	font-size: 2em;
 	font-family: "Nixie One", system-ui;
@@ -123,8 +127,8 @@ body{
 
 .date{
 	margin: 1em 0;
-	font-size: 0.8em;
-	font-weight: 300;
+	font-size: 0.9em;
+	font-weight: 500;
 }
 
 #bottom{
@@ -191,6 +195,22 @@ body{
 
 }
 
+/* - - - Seasonal background on recipe 5- - -  */
+
+.seasonal{
+	background-image: url("/images/xmas.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: 100% 100%;
+	background-position: right top;
+	z-index: 110;
+
+	width: auto;
+	height: 450px;
+	color: white;
+
+}
+
 
 
 
@@ -249,7 +269,7 @@ body{
 	}
 
 	#bottom .post{
-		width: 21%;
+		width: 15%;
 	}
 }
 
@@ -261,7 +281,7 @@ body{
 	}
 
 	#bottom .post{
-		width: 31%;
+		width: 15%;
 	}
 }
 
@@ -289,7 +309,7 @@ body{
 	}
 
 	#bottom .post{
-		width: 45%;
+		width: 15%;
 	}
 	
 	#w50 p{
@@ -305,7 +325,7 @@ body{
 	}
 
 	#bottom .post{
-		width: 45%;
+		width: 15%;
 	}
 
 	#w50 p{

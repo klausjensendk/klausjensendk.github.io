@@ -181,7 +181,6 @@ body{
 
 #w50 p{
 	margin: 0 0 1em 0;
-	columns: 2;
 }
 
 #w50 ul{
@@ -219,6 +218,11 @@ body{
 	.mainpost{
 		width: 15%;
 	}
+
+	#w50 p{
+	margin: 0 0 1em 0;
+	columns: 2;
+}
 }
 
 @media only screen and (max-width: 2000px) {
@@ -271,6 +275,10 @@ body{
 	#bottom .post{
 		width: 31%;
 	}
+
+	#w50 p{
+		columns: 1;
+	}
 }
 
 @media only screen and (max-width: 800px) {
@@ -283,6 +291,10 @@ body{
 	#bottom .post{
 		width: 45%;
 	}
+	
+	#w50 p{
+		columns: 1;
+	}
 }
 
 @media only screen and (max-width: 700px) {
@@ -294,5 +306,9 @@ body{
 
 	#bottom .post{
 		width: 45%;
+	}
+
+	#w50 p{
+		columns: 1;
 	}
 }

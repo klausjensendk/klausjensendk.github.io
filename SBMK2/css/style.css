@@ -82,6 +82,10 @@ p{
 .container:nth-of-type(4){
 	background-color: #ffffff;
 }
+
+/* about all recipes section */
+
+
 .container:nth-of-type(5){
 	border: none;
 	background-color: #ebebeb69;
@@ -267,9 +271,10 @@ p{
 /* allrecps section */
 
 .container_inner_allrecps{
+	font-size: 0.8em;
 	margin: 0 1em 1em 0;
 	padding: 0.5em 0;
-	min-height: 5em;
+	width: 30%;
 	border-top: 1px solid grey;
 }
 

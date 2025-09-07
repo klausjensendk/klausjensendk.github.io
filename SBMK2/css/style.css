@@ -58,7 +58,13 @@ p{
 	margin: 0;
 	padding: 1em 0.5em;
 	color: rgb(255, 255, 255);
-	background-color: rgba(118, 112, 79, 0.91);
+	background-color: rgba(192, 149, 78, 0.91);
+	font-family: "Bebas Neue", sans-serif;
+}
+
+.container:nth-of-type(1) a{
+	font-size: 1em;
+	color: rgb(255, 255, 255);
 	font-family: "Bebas Neue", sans-serif;
 }
 
@@ -92,63 +98,75 @@ p{
 
 .container:nth-of-type(6){
 	border: none;
-	background-color: #ebebeb69;
+	background-color: #786a6aa0;
 }
 .container:nth-of-type(7){
 	border: none;
-	background-color: #ebebeb69;
+	background-color: #d4d4d49c;
 }
 .container:nth-of-type(8){
 	border: none;
-	background-color: #ebebeb69;
+	background-color: #d4d4d49c;
 }
 
 /* about container section */
 
 .container:nth-of-type(9){
 	border: none;
-	background-color: #c0c3ad;
+	background-color: #ffc93c;
 }
 .container:nth-of-type(10){
 	border: none;
-	background-color: #c0c3ad;
+	color: rgb(255, 255, 255);
+	background-color: #155263;
 }
 .container:nth-of-type(11){
 	border: none;
-	background-color: #c0c3ad;
+	background-color: #ffc93c;
 }
 
 /* info container section */
 
 .container:nth-of-type(12){
 	border: none;
-	background-color: #82b18b;
+	background-color: #dfd3c3;
 }
 .container:nth-of-type(13){
 	border: none;
-	background-color: #82b18b;
+	color: white;
+	background-color: #596e79;
 }
 .container:nth-of-type(14){
 	border: none;
-	background-color: #82b18b;
+	background-color: #dfd3c3;
 }
 
 /* credit / footer container section */
 
 .container:nth-of-type(15){
 	border: none;
-	background-color: #949672;
+	background-color: #ffffff;
 }
 .container:nth-of-type(16){
 	border-bottom: none;
-	background-color: #949672;
-	color: white;
+	background-color: #bae8e8;
+	color: rgb(0, 0, 0);
 }
 .container:nth-of-type(17){
+	padding: 1em 1em 5em 1em;
 	border-bottom: none;
-	background-color: #949672;
-	color: rgb(255, 255, 255);
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
 }
+
+/* go to top button */
+
+.container:nth-of-type(18){
+	position: fixed;
+	bottom: 0;
+	background-color: #ebf6a6;
+}
+
 
 /* container inners */
 

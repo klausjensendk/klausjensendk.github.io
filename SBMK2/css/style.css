@@ -1,6 +1,11 @@
 *{
 	margin: 0; 
 	padding: 0;
+	font-size: 14px;
+}
+
+html{
+	scroll-behavior: smooth;
 }
 
 a{
@@ -17,318 +22,376 @@ body{
 	margin: 0;
 	padding: 0;
 
-	font-family: "Roboto", sans-serif;
+	
 	font-family: "Bebas Neue", sans-serif;
-	font-family: "Nixie One", system-ui;
-	font-family: "Quicksand", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-family: "Cal Sans", sans-serif;
 	font-family: "Francois One", sans-serif;
-
+	font-family: "Nixie One", system-ui;
 	font-family: "Quicksand", sans-serif;
 	font-weight: 400;
 	font-style: normal
 }
 
+p{
+	margin: 1em 0;
+	padding: 0;
+	line-height: 1.6em;
+}
+
 .container{
 	margin: 0;
 	padding: 1em;
-	width: auto;
-	font-size: 0.8em;
-	border-bottom: 1px solid #ddd;
-	background-color: rgba(250, 235, 215, 0);
+	border-bottom: 1px solid grey;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: start;
 }
 
-.container:nth-last-of-type(1){
-	color: rgb(0, 0, 0);
-	font-size: 0.7em;
-	background-color: rgb(255, 255, 255);
-}
+/* container colors main recepe etc */
 
-#title{
+.container:nth-of-type(1){
+	border-bottom: none;
 	font-size: 2em;
-	margin: 0 0 0 -0.5em;
+	margin: 0;
+	padding: 1em 0.5em;
+	color: rgb(255, 255, 255);
+	background-color: rgba(118, 112, 79, 0.91);
 	font-family: "Bebas Neue", sans-serif;
-
 }
 
-#nav{
+.container:nth-of-type(2){
+	border-bottom: none;
+	font-size: 2.5em;
+	margin: 0;
+	padding: 1em 0.5em;
+	color: rgb(0, 0, 0);
+	background-color: rgba(247, 247, 222, 0.096);
+	font-family: "Bebas Neue", sans-serif;
+}
+
+.container:nth-of-type(3){
+	border-bottom: 1px solid grey;
+	background-color: rgb(255, 255, 255);
 	position: sticky;
 	top: 0;
-	z-index: 0;
-	background-color: white;
 }
 
-#nav a:hover{
-	color: red;
+.container:nth-of-type(4){
+	background-color: #ffffff;
 }
-
-#nav ul{
-	list-style-type: none;
-}
-
-#nav li{
-	display: inline;
-	margin: 0 1em 0 0;
-}
-
-#main{
-	margin: 1em 0;
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.maintext p{
-	columns: 3;
-	margin: 0 0 1em 0;
-	background-color: rgba(228, 10, 10, 0);
-}
-
-.post{
+.container:nth-of-type(5){
 	border: none;
-	width: ;
+	background-color: #ebebeb69;
+}
+.container:nth-of-type(6){
+	border: none;
+	background-color: #ebebeb69;
+}
+.container:nth-of-type(7){
+	border: none;
+	background-color: #ebebeb69;
 }
 
-.mainpost{
-	width: 23%;
-	font-size: 0.9em;
-	margin: 1em 1em 0 0;
-	padding: 1em 0;
-	border-top: 1px solid #000000;
+/* about container section */
+
+.container:nth-of-type(8){
+	border: none;
+	background-color: #c0c3ad;
+}
+.container:nth-of-type(9){
+	border: none;
+	background-color: #c0c3ad;
+}
+.container:nth-of-type(10){
+	border: none;
+	background-color: #c0c3ad;
 }
 
-.mainpost img{
-	width: 100%;
-	margin: 0;
-	padding: 0;
+/* info container section */
+
+.container:nth-of-type(11){
+	border: none;
+	background-color: #82b18b;
+}
+.container:nth-of-type(12){
+	border: none;
+	background-color: #82b18b;
+}
+.container:nth-of-type(13){
+	border: none;
+	background-color: #82b18b;
 }
 
-.mainpost p{
-	margin: 0.5em 00;
-	padding: 0 0;
+/* credit / footer container section */
+
+.container:nth-of-type(14){
+	border: none;
+	background-color: #949672;
+}
+.container:nth-of-type(15){
+	border-bottom: none;
+	background-color: #949672;
+	color: white;
+}
+.container:nth-of-type(16){
+	border-bottom: none;
+	background-color: #949672;
+	color: rgb(255, 255, 255);
 }
 
-.mainpostHeadline{
-	margin: 0 0 0.5em 0;
-	font-size: 1.8em;
-	font-weight: 600;
-	text-transform: capitalize;
-	font-family: "Roboto", sans-serif;
-}
+/* container inners */
 
-#sectionheader{
-	text-align: center;
-	text-transform: capitalize;
-	font-weight: 300;
-	font-size: 2em;
-	font-family: "Nixie One", system-ui;
-}
-
-.date{
-	margin: 1em 0;
-	font-size: 0.9em;
-	font-weight: 500;
-}
-
-#bottom{
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#bottom .post{
-	width: 15%;
-	height: 40em;
+.container_inner{
 	margin: 0 1em 1em 0;
-	overflow: hidden;
-	float: left;
-	zoom: 50%;
+	padding: 0.5em 0;
+	min-height: 10rem;
+	border-top: 1px solid grey;
 }
 
-/*  - - - Recipe tags - - -  */
-
-.containerrecipe{
-	margin: 0;
-	padding: 1em;
-	text-transform: capitalize;
-
-	border-bottom: 1px solid #ddd;
-	background-color: rgba(250, 235, 215, 0);
+.container_inner:nth-of-type(1){
+	border-top: none;
 }
 
-#w100{
-	width: auto;
-	font-size: 1em;
-	font-weight: 700;
-	background-color: rgba(163, 64, 64, 0);
-}
-
-#w100 img{
+.container_inner img{
 	width: 100%;
-	height: 25em;
+	margin: 1em 0 0 0;
+	height: auto;
+	margin: 1em 1emm 0 0;
+}
 
+.container_inner ul{
+	list-style: none;
+}
+
+.container_inner ul li{
+	display: inline;
+	font-size: 2em;
+	margin: 0 1em 0 0;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+}
+
+/* widths */
+
+#w20{
+	width: 22%;
 }
 
 #w50{
-	width: auto;
-	font-size: 0.8em;
+	width: 46%;
+}
+
+#w100{
+	width: 100%;
+}
+
+/* ingredients */
+
+#ingredients{
+	color: rgb(162, 164, 217);
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+	line-height: 1.8em;
+}
+
+#ingredients ul{
+	list-style: none;
+}
+
+#ingredients ul li{
+	font-size: 1.2em;
+	display: block;
+}
+
+/* headline + nav */
+
+.headline{
+	width: 100%;
+	margin: 0 1em 0 0;
+
+	text-transform: capitalize;
+	font-size: 1.5em;
+	font-weight: 700;
+	font-family: "Nixie One", system-ui;;
+}
+
+#nav ul{
+	list-style: none;
+}
+
+#nav ul li{
+	display: inline;
+	margin: 0 1em 0 0;
+
+}
+
+#nav a:hover{
+	color: rgb(0, 8, 255);
+}
+
+/* standout */
+
+#standout{
+	color: rgb(255, 0, 0);
+}
+
+#standout a{
+	color: rgba(0, 0, 0, 0.979);
+	font-weight: 900;
+	font-size: 1em;
 	font-family: "Nixie One", system-ui;
+	text-transform: capitalize;
+}
+
+/* about section */
+
+.about{
+	width: 40%;
+	margin: 0 1em 1em 0;
+	padding: 1em;
 	background-color: rgba(255, 0, 0, 0);
+	border-top: 1px solid grey;
 }
 
-#w50 img{
-	width: 23%;
+.about img{
+	width: 100%;
+	margin: 0 0 1em 0;
+	overflow: hidden;
+	height: 5em;
+	width: 5em;
+}
+
+/* allrecps section */
+
+.container_inner_allrecps{
+	margin: 0 1em 1em 0;
+	padding: 0.5em 0;
+	min-height: 5em;
+	border-top: 1px solid grey;
+}
+
+.container_inner_allrecps img{
+	margin: 0 1em 1em 0;
+	padding: 0.5em 0;
+	width: 100%;
 
 }
 
-#w50 p{
+/* footer (credit) sections */
+
+.footer{
+	width: 15%;
+	margin: 0 1em 1em 0;
+	padding: 0.5em 0;
+	font-size: 1em;
+}
+
+.footer img{
+	width: 30%;
+}
+
+.foothead{
+	font-weight: 700;
+	margin: 0 0 0.5em 0;
+	padding: 0;
+	border-bottom: 1px solid grey;
+}
+
+.item{
+	font-size: 0.9em;
 	margin: 0 0 1em 0;
 }
-
-#w50 ul{
-	list-style-type: none;
-}
-
-#w50 li{
-
-}
-
-/* - - - Seasonal background on recipe 5- - -  */
-
-.seasonal{
-	background-image: url("/images/xmas.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed; 
-	background-size: 100% 100%;
-	background-position: right top;
-	z-index: 110;
-
-	width: auto;
-	height: 450px;
-	color: white;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 
 @media only screen and (max-width: 2800px) {
-
 	body{
 		margin: auto;
 		width: 80%;
 	}
 
-	.mainpost{
-		width: 15%;
+	.container:nth-of-type(3){
+		border-bottom: 1px solid #ddd;
+		border-top: 1px solid #ddd;
 	}
 
-	#w50 p{
-	margin: 0 0 1em 0;
-	columns: 2;
-}
+	.container_inner:nth-of-type(1){
+		columns: 3;
+	}
 }
 
 @media only screen and (max-width: 2000px) {
-
 	body{
-		margin: auto;
-		width: 80%;
+		width: 100%;
+		1background-color: rgba(249, 249, 249, 0);
 	}
 
-	.mainpost{
-		width: 22%;
+	.container:nth-of-type(2){
+		border-bottom: 1px solid #ddd;
 	}
 }
 
 @media only screen and (max-width: 1400px) {
-
 	body{
-		margin: auto;
-		width: 100%;
+		1background-color: rgba(231, 6, 6, 0.918);
 	}
-	.mainpost{
-		width: 31%;
-		background-color: rgba(43, 8, 243, 0);
+	
+	.container_inner{
+		width: 30% !important;
 	}
 
-	#bottom .post{
-		width: 15%;
+	.container_inner:nth-of-type(1){
+		width: 100% !important;
+	}
+
+	.container_inner:nth-of-type(1){
+		columns: 2;
 	}
 }
 
 @media only screen and (max-width: 1000px) {
-
-	.mainpost{
-		width: 31%;
-		background-color: rgba(25, 238, 53, 0);
+	body{
+		1background-color: rgba(255, 255, 255, 0);
+	}
+	.container_inner{
+		width: 45% !important;
 	}
 
-	#bottom .post{
-		width: 15%;
+	.container_inner:nth-of-type(1){
+		columns: 1;
 	}
 }
 
 @media only screen and (max-width: 900px) {
-
-	.mainpost{
-		width: 45%;
-		background-color: rgba(232, 23, 89, 0);
+	body{
+		1background-color: rgba(255, 255, 255, 0);
 	}
-
-	#bottom .post{
-		width: 31%;
-	}
-
-	#w50 p{
-		columns: 1;
+	.container_inner{
+		width: 45% !important;
 	}
 }
 
 @media only screen and (max-width: 800px) {
-
-	.mainpost{
-		width: 45%;
-		background-color: rgba(212, 255, 0, 0);
+	body{
+		1background-color: rgba(255, 255, 255, 0);
 	}
 
-	#bottom .post{
-		width: 15%;
-	}
-	
-	#w50 p{
-		columns: 1;
+	.container_inner{
+		width: 100% !important;
 	}
 }
 
 @media only screen and (max-width: 700px) {
 
-	.mainpost{
-		width: 100%;
-		background-color: rgba(0, 255, 255, 0);
+	body{
+		1background-color: rgba(255, 255, 255, 0);
 	}
-
-	#bottom .post{
-		width: 15%;
-	}
-
-	#w50 p{
-		columns: 1;
+	.container_inner{
+		width: 100% !important;
 	}
 }

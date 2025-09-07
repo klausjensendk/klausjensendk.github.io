@@ -1,0 +1,334 @@
+*{
+	margin: 0; 
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+::selection {
+	color: rgb(0, 0, 0);
+	background: rgb(237, 241, 30);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", sans-serif;
+	font-family: "Bebas Neue", sans-serif;
+	font-family: "Nixie One", system-ui;
+	font-family: "Quicksand", sans-serif;
+	font-family: "Cal Sans", sans-serif;
+	font-family: "Francois One", sans-serif;
+
+	font-family: "Quicksand", sans-serif;
+	font-weight: 400;
+	font-style: normal
+}
+
+.container{
+	margin: 0;
+	padding: 1em;
+	width: auto;
+	font-size: 0.8em;
+	border-bottom: 1px solid #ddd;
+	background-color: rgba(250, 235, 215, 0);
+}
+
+.container:nth-last-of-type(1){
+	color: rgb(0, 0, 0);
+	font-size: 0.7em;
+	background-color: rgb(255, 255, 255);
+}
+
+#title{
+	font-size: 2em;
+	margin: 0 0 0 -0.5em;
+	font-family: "Bebas Neue", sans-serif;
+
+}
+
+#nav{
+	position: sticky;
+	top: 0;
+	z-index: 0;
+	background-color: white;
+}
+
+#nav a:hover{
+	color: red;
+}
+
+#nav ul{
+	list-style-type: none;
+}
+
+#nav li{
+	display: inline;
+	margin: 0 1em 0 0;
+}
+
+#main{
+	margin: 1em 0;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.maintext p{
+	columns: 3;
+	margin: 0 0 1em 0;
+	background-color: rgba(228, 10, 10, 0);
+}
+
+.post{
+	border: none;
+	width: ;
+}
+
+.mainpost{
+	width: 23%;
+	font-size: 0.9em;
+	margin: 1em 1em 0 0;
+	padding: 1em 0;
+	border-top: 1px solid #000000;
+}
+
+.mainpost img{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.mainpost p{
+	margin: 0.5em 00;
+	padding: 0 0;
+}
+
+.mainpostHeadline{
+	margin: 0 0 0.5em 0;
+	font-size: 1.8em;
+	font-weight: 600;
+	text-transform: capitalize;
+	font-family: "Roboto", sans-serif;
+}
+
+#sectionheader{
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 300;
+	font-size: 2em;
+	font-family: "Nixie One", system-ui;
+}
+
+.date{
+	margin: 1em 0;
+	font-size: 0.9em;
+	font-weight: 500;
+}
+
+#bottom{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#bottom .post{
+	width: 15%;
+	height: 40em;
+	margin: 0 1em 1em 0;
+	overflow: hidden;
+	float: left;
+	zoom: 50%;
+}
+
+/*  - - - Recipe tags - - -  */
+
+.containerrecipe{
+	margin: 0;
+	padding: 1em;
+	text-transform: capitalize;
+
+	border-bottom: 1px solid #ddd;
+	background-color: rgba(250, 235, 215, 0);
+}
+
+#w100{
+	width: auto;
+	font-size: 1em;
+	font-weight: 700;
+	background-color: rgba(163, 64, 64, 0);
+}
+
+#w100 img{
+	width: 100%;
+	height: 25em;
+
+}
+
+#w50{
+	width: auto;
+	font-size: 0.8em;
+	font-family: "Nixie One", system-ui;
+	background-color: rgba(255, 0, 0, 0);
+}
+
+#w50 img{
+	width: 23%;
+
+}
+
+#w50 p{
+	margin: 0 0 1em 0;
+}
+
+#w50 ul{
+	list-style-type: none;
+}
+
+#w50 li{
+
+}
+
+/* - - - Seasonal background on recipe 5- - -  */
+
+.seasonal{
+	background-image: url("/images/xmas.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: 100% 100%;
+	background-position: right top;
+	z-index: 110;
+
+	width: auto;
+	height: 450px;
+	color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 2800px) {
+
+	body{
+		margin: auto;
+		width: 80%;
+	}
+
+	.mainpost{
+		width: 15%;
+	}
+
+	#w50 p{
+	margin: 0 0 1em 0;
+	columns: 2;
+}
+}
+
+@media only screen and (max-width: 2000px) {
+
+	body{
+		margin: auto;
+		width: 80%;
+	}
+
+	.mainpost{
+		width: 22%;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+
+	body{
+		margin: auto;
+		width: 100%;
+	}
+	.mainpost{
+		width: 31%;
+		background-color: rgba(43, 8, 243, 0);
+	}
+
+	#bottom .post{
+		width: 15%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.mainpost{
+		width: 31%;
+		background-color: rgba(25, 238, 53, 0);
+	}
+
+	#bottom .post{
+		width: 15%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+
+	.mainpost{
+		width: 45%;
+		background-color: rgba(232, 23, 89, 0);
+	}
+
+	#bottom .post{
+		width: 31%;
+	}
+
+	#w50 p{
+		columns: 1;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	.mainpost{
+		width: 45%;
+		background-color: rgba(212, 255, 0, 0);
+	}
+
+	#bottom .post{
+		width: 15%;
+	}
+	
+	#w50 p{
+		columns: 1;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+
+	.mainpost{
+		width: 100%;
+		background-color: rgba(0, 255, 255, 0);
+	}
+
+	#bottom .post{
+		width: 15%;
+	}
+
+	#w50 p{
+		columns: 1;
+	}
+}

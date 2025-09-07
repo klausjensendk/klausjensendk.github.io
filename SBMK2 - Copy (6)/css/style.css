@@ -1,0 +1,290 @@
+*{
+	margin: 0; 
+	padding: 0;
+	font-size: 14px;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+::selection {
+	color: rgb(0, 0, 0);
+	background: rgb(237, 241, 30);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", sans-serif;
+	font-family: "Bebas Neue", sans-serif;
+	font-family: "Nixie One", system-ui;
+	font-family: "Quicksand", sans-serif;
+	font-family: "Cal Sans", sans-serif;
+	font-family: "Francois One", sans-serif;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 400;
+	font-style: normal
+}
+
+.outer{
+	margin: 1em;
+	padding: 1em;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: start;
+}
+
+.outer:nth-of-type(1){
+	background-color: #e7e4e4;
+	margin: 0;
+	padding: 1em 2em;
+	border-bottom: 3px solid rgb(206, 206, 206);
+}
+
+.outer:nth-of-type(2){
+	background-color: #fff;
+	color: #000000;
+}
+
+.outer:nth-of-type(3){
+	background-color: rgb(65, 118, 210);
+	color: #fcfcfc;
+	margin: 0;
+	padding: 1em 2em
+}
+.outer:nth-of-type(4){
+	background-color: rgb(227, 247, 5);
+	color: rgb(0, 0, 0);
+	margin: 0;
+	padding: 1em 2em
+}
+
+.container{
+	margin: 0 1em 1em 0;
+	padding: 0.5em 0;
+	float: left;
+
+	border-bottom: 1px solid rgb(215, 215, 215);
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: start;
+}
+
+#con1{
+	width: 65%;
+	float: left;
+}
+
+#con2{
+	width: 25%;
+	font-size: 0.8em;
+	float: right;
+	padding: 0 0 0 1em;
+}
+
+.w50{
+	width: 45%;
+}
+
+#w100{
+	width: 45%;
+	border-bottom: 1px solid rgb(225, 222, 222);
+}
+
+#wcomplete{
+	width: 100%;
+}
+
+.headline{
+	font-size: 1.5em;
+	text-align: left;
+	margin: 0 0 0.5em 0;
+	padding: 0;
+	border-bottom: 1px solid #ddd;
+	font-family: "Francois One", sans-serif;
+}
+
+#con1 .sectionheader{
+	background-color: rgba(0, 255, 255, 0);
+	width: 100%;
+	font-size: 2em;
+	text-align: left;
+	margin: 0 0 0.5em 0;
+	border-bottom: 1px solid  #ddd;
+	
+	background-color: rgba(215, 16, 16, 0);
+	color: rgb(0, 0, 0);	
+	font-family: "Francois One", sans-serif;
+}
+
+#con2 .sectionheader{
+	background-color: rgba(2, 237, 237, 0);
+	width: 100%;
+	font-size: 2.5em;
+	text-align: left;
+	margin: 0.3em 0 0.5em 0;
+	border-bottom: 1px solid #ddd;
+
+	font-family: "Francois One", sans-serif;
+}
+
+.sectionheader::before{
+	content: "";
+}
+
+.sectionheader::after{
+	content: "★";
+}
+
+.outer .top{
+	float: left;
+	width: 100%;
+	border: none;
+	background-color: red;
+}
+
+#nav{
+	position: sticky;
+	top: 0;
+	margin: 0 1em 1em 0;
+	padding: 1em 0;
+
+	border-bottom: 1px solid #ddd;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+#nav ul{
+	list-style: none;
+}
+
+#nav ul li{
+	display: inline;
+	margin: 0 1em 1em 0;
+	padding: 0.5em;
+
+	font-family: "Bebas Neue", sans-serif;
+}
+
+#nav ul a:hover{
+	background-color: #c2f50c;
+}
+
+
+.title{
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 2em;
+	margin: 0 0 0 0;
+	border: none;
+	color: white;
+}
+
+p{
+	margin: 0 1em 1em 0;
+}
+
+.extrainfo{
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	font-size: 0.8em;
+	font-weight: 700;
+}
+
+.extrainfo ul{
+	list-style: none;
+}
+
+.extrainfo li{
+	margin: 0 1em 1em 0;
+	display: inline;
+	font-size: 0.9em;
+	font-family: "Nixie One", system-ui;
+}
+
+.image img{
+	width: 48%;
+	float: left;
+	background-color: red;
+	margin: 0 1em 1em 0;
+}
+
+@media only screen and (max-width: 2800px) {
+
+	body{
+		margin: auto;
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 2000px) {
+
+	body{
+		margin: auto;
+		width: 100%;
+	}
+
+	.image img{
+		width: 45%;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	body{
+		margin: auto;
+		width: 100%;
+	}
+
+	.image img{
+		width: 45%;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.image img{
+		width: 45%;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+
+	.image img{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	.image img{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+
+	#con1 .w50{
+		width: 100%;
+	}
+
+	#con2{.container{
+		font-size: 0.9em;
+	}
+
+	.sectionheader{
+		font-size: 1.1em;
+	}
+
+	.image img{
+		width: 100%;
+	}
+}

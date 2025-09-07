@@ -58,7 +58,7 @@ p{
 	margin: 0;
 	padding: 1em 0.5em;
 	color: rgb(0, 0, 0);
-	
+
 	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
 	font-family: "Bebas Neue", sans-serif;
 }
@@ -103,7 +103,7 @@ p{
 }
 .container:nth-of-type(7){
 	border: none;
-	background-color: #d4d4d49c;
+	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
 }
 .container:nth-of-type(8){
 	border: none;
@@ -119,7 +119,7 @@ p{
 .container:nth-of-type(10){
 	border: none;
 	color: rgb(255, 255, 255);
-	background-color: #155263;
+	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
 }
 .container:nth-of-type(11){
 	border: none;
@@ -135,7 +135,7 @@ p{
 .container:nth-of-type(13){
 	border: none;
 	color: white;
-	background-color: #596e79;
+	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
 }
 .container:nth-of-type(14){
 	border: none;
@@ -150,7 +150,7 @@ p{
 }
 .container:nth-of-type(16){
 	border-bottom: none;
-	background-color: #f4ecec;
+	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
 	color: rgb(0, 0, 0);
 }
 .container:nth-of-type(17){

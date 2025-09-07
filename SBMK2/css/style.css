@@ -113,7 +113,7 @@ p{
 
 .container:nth-of-type(9){
 	border: none;
-	background-color: #ffc93c;
+	background-color: #eaebd1;
 }
 .container:nth-of-type(10){
 	border: none;
@@ -122,7 +122,7 @@ p{
 }
 .container:nth-of-type(11){
 	border: none;
-	background-color: #ffc93c;
+	background-color: #eaebd1;
 }
 
 /* info container section */
@@ -281,14 +281,25 @@ p{
 	padding: 1em;
 	background-color: rgba(255, 0, 0, 0);
 	border-top: 1px solid grey;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .about img{
 	width: 100%;
 	margin: 0 0 1em 0;
 	overflow: hidden;
-	height: 5em;
-	width: 5em;
+	float: left;
+	height: auto;
+	width: 10em;
+}
+
+.about p{
+	float: right;
+	width: 50%;
+	margin: 0 1em;;
 }
 
 /* allrecps section */

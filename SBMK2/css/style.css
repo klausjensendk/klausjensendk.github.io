@@ -57,8 +57,9 @@ p{
 	font-size: 2em;
 	margin: 0;
 	padding: 1em 0.5em;
-	color: rgb(255, 255, 255);
-	background-color: rgba(192, 149, 78, 0.91);
+	color: rgb(0, 0, 0);
+	
+	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
 	font-family: "Bebas Neue", sans-serif;
 }
 
@@ -98,7 +99,7 @@ p{
 
 .container:nth-of-type(6){
 	border: none;
-	background-color: #786a6aa0;
+	background-color: #d4d4d49c;
 }
 .container:nth-of-type(7){
 	border: none;
@@ -149,7 +150,7 @@ p{
 }
 .container:nth-of-type(16){
 	border-bottom: none;
-	background-color: #bae8e8;
+	background-color: #f4ecec;
 	color: rgb(0, 0, 0);
 }
 .container:nth-of-type(17){

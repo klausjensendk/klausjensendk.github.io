@@ -21,7 +21,6 @@ a{
 body{
 	margin: 0;
 	padding: 0;
-
 	
 	font-family: "Bebas Neue", sans-serif;
 	font-family: "Roboto", sans-serif;
@@ -50,7 +49,15 @@ p{
 	align-items: start;
 }
 
-/* container colors main recepe etc */
+#copyright{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 0.8;
+	border-bottom: 1px solid #ddd;
+}
+
+/* container colors main recepe */
 
 .container:nth-of-type(1){
 	border-bottom: none;
@@ -144,7 +151,7 @@ p{
 	background-color: #dfd3c3;
 }
 
-/* credit / footer container section */
+/* credit/footer container section */
 
 .container:nth-of-type(15){
 	border: none;
@@ -322,6 +329,7 @@ p{
 	margin: 0 1em 1em 0;
 	padding: 0.5em 0;
 	font-size: 1em;
+	text-transform: capitalize;
 }
 
 .footer img{
@@ -349,17 +357,9 @@ p{
 	object-fit: cover;
 }
 
-
-
-
-
-.clickable {
-      cursor: pointer;
-    }
-
-
-
-	
+.clickable{
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 2800px) {
 	body{
@@ -446,6 +446,10 @@ p{
 	.container_inner{
 		width: 100% !important;
 	}
+
+	.about p{
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -460,4 +464,9 @@ p{
 	.about{
 		width: 100%;
 	}
+
+	.about p{
+		width: 100%;
+	}
+
 }

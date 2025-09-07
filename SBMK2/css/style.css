@@ -42,7 +42,7 @@ p{
 .container{
 	margin: 0;
 	padding: 1em;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid rgba(128, 128, 128, 0);
 
 	display: flex;
 	flex-wrap: wrap;
@@ -57,15 +57,14 @@ p{
 	font-size: 2em;
 	margin: 0;
 	padding: 1em 0.5em;
-	color: rgb(0, 0, 0);
 
-	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
+	background-image: linear-gradient(to right, rgba(216, 179, 233, 0.24),rgba(234, 204, 147, 0.162),rgb(249, 249, 225),rgba(185, 255, 185, 0.218),rgba(239, 239, 255, 0.2),rgba(248, 239, 255, 0.388),rgba(218, 214, 229, 0.107));
 	font-family: "Bebas Neue", sans-serif;
 }
 
 .container:nth-of-type(1) a{
 	font-size: 1em;
-	color: rgb(255, 255, 255);
+	color: rgb(153, 146, 19);
 	font-family: "Bebas Neue", sans-serif;
 }
 
@@ -86,9 +85,7 @@ p{
 	top: 0;
 }
 
-.container:nth-of-type(4){
-
-}
+.container:nth-of-type(4){}
 
 .container:nth-of-type(5){
 	background-color: #ffffff;
@@ -96,34 +93,37 @@ p{
 
 /* about all recipes section */
 
-
 .container:nth-of-type(6){
 	border: none;
-	background-color: #d4d4d49c;
+	background-color: #f0f0f09c;
 }
+
 .container:nth-of-type(7){
 	border: none;
 	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
 }
+
 .container:nth-of-type(8){
 	border: none;
-	background-color: #d4d4d49c;
+	background-color: #f0f0f09c;
 }
 
 /* about container section */
 
 .container:nth-of-type(9){
 	border: none;
-	background-color: #eaebd1;
+	background-color: #f3f4e9;
 }
+
 .container:nth-of-type(10){
 	border: none;
 	color: rgb(255, 255, 255);
 	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
 }
+
 .container:nth-of-type(11){
 	border: none;
-	background-color: #eaebd1;
+	background-color: #f3f4e9;
 }
 
 /* info container section */
@@ -132,11 +132,13 @@ p{
 	border: none;
 	background-color: #dfd3c3;
 }
+
 .container:nth-of-type(13){
 	border: none;
 	color: white;
 	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
 }
+
 .container:nth-of-type(14){
 	border: none;
 	background-color: #dfd3c3;
@@ -148,11 +150,13 @@ p{
 	border: none;
 	background-color: #ffffff;
 }
+
 .container:nth-of-type(16){
 	border-bottom: none;
 	background-image: linear-gradient(to right, rgb(216, 179, 233),rgb(234, 204, 147),rgb(249, 249, 225),rgb(185, 255, 185),rgb(239, 239, 255),rgb(248, 239, 255),rgb(218, 214, 229));
 	color: rgb(0, 0, 0);
 }
+
 .container:nth-of-type(17){
 	padding: 1em 1em 5em 1em;
 	border-bottom: none;
@@ -168,14 +172,13 @@ p{
 	background-color: #ebf6a6;
 }
 
-
 /* container inners */
 
 .container_inner{
 	margin: 0 1em 1em 0;
 	padding: 0.5em 0;
 	min-height: 10rem;
-	border-top: 1px solid grey;
+	border-top: 1px solid rgb(221, 221, 221);
 }
 
 .container_inner:nth-of-type(1){
@@ -199,7 +202,7 @@ p{
 	font-size: 1.2em;
 	margin: 0 1em 0 0;
 	font-weight: 700;
-	color: rgb(0, 0, 0);
+	color: rgb(138, 105, 62);
 }
 
 /* widths */
@@ -219,8 +222,6 @@ p{
 /* ingredients */
 
 #ingredients{
-	color: rgb(162, 164, 217);
-	font-family: "Roboto", sans-serif;
 	font-weight: 100;
 	line-height: 1.8em;
 }
@@ -232,6 +233,8 @@ p{
 #ingredients ul li{
 	font-size: 1.2em;
 	display: block;
+	color: rgb(49, 49, 49);
+	font-family: "Roboto", sans-serif;
 }
 
 /* headline + nav */
@@ -253,25 +256,17 @@ p{
 #nav ul li{
 	display: inline;
 	margin: 0 1em 0 0;
-
 }
 
 #nav a:hover{
-	color: rgb(0, 8, 255);
+	color: rgb(130, 172, 255);
+	text-decoration: underline;
 }
 
 /* standout */
 
 #standout{
-	color: rgb(255, 0, 0);
-}
-
-#standout a{
-	color: rgba(0, 0, 0, 0.979);
-	font-weight: 900;
-	font-size: 1em;
-	font-family: "Nixie One", system-ui;
-	text-transform: capitalize;
+	color: rgb(0, 0, 0);
 }
 
 /* about section */
@@ -310,14 +305,13 @@ p{
 	margin: 0 1em 1em 0;
 	padding: 0.5em 0;
 	width: 30%;
-	border-top: 1px solid grey;
+	border-top: 1px solid rgb(205, 205, 205);
 }
 
 .container_inner_allrecps img{
 	margin: 0 1em 1em 0;
 	padding: 0.5em 0;
 	width: 100%;
-
 }
 
 /* footer (credit) sections */
@@ -338,7 +332,7 @@ p{
 	font-weight: 700;
 	margin: 0 0 0.5em 0;
 	padding: 0;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid rgb(212, 212, 212);
 }
 
 .item{
@@ -347,9 +341,7 @@ p{
 
 /* presentation image */
 
-#presentation{
-
-}
+#presentation{}
 
 #presentation img{
 	width: 100%;
@@ -359,6 +351,15 @@ p{
 
 
 
+
+
+.clickable {
+      cursor: pointer;
+    }
+
+
+
+	
 
 @media only screen and (max-width: 2800px) {
 	body{

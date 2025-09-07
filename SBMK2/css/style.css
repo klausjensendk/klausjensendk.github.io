@@ -49,6 +49,10 @@ p{
 	align-items: start;
 }
 
+#home{
+	font-family: "Homemade Apple", cursive;
+}
+
 #copyright{
 	margin: 0;
 	padding: 0;
@@ -196,6 +200,7 @@ p{
 	width: 100%;
 	margin: 1em 0 0 0;
 	height: auto;
+	max-height: 20em;
 	margin: 1em 1emm 0 0;
 }
 
@@ -272,9 +277,9 @@ p{
 
 /* standout */
 
-#standout{
-	color: rgb(0, 0, 0);
-}
+#standout{}
+
+
 
 /* about section */
 

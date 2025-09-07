@@ -168,11 +168,12 @@ p{
 
 .container_inner ul{
 	list-style: none;
+	margin: 1em 1em 0 0;
 }
 
 .container_inner ul li{
 	display: inline;
-	font-size: 2em;
+	font-size: 1.2em;
 	margin: 0 1em 0 0;
 	font-weight: 700;
 	color: rgb(0, 0, 0);
@@ -296,7 +297,7 @@ p{
 }
 
 .footer img{
-	width: 30%;
+	width: 20%;
 }
 
 .foothead{
@@ -308,7 +309,6 @@ p{
 
 .item{
 	font-size: 0.9em;
-	margin: 0 0 1em 0;
 }
 
 

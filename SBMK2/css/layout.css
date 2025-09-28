@@ -251,7 +251,7 @@ h2{
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
 	body{
 		background-color: rgba(242, 15, 15, 0.934);
 	}

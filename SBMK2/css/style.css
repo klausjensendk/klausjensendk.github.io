@@ -277,7 +277,9 @@ p{
 
 /* standout */
 
-#standout{}
+#standout{
+	text-transform: capitalize;
+}
 
 
 

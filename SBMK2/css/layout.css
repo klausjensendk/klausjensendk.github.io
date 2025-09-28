@@ -1,0 +1,260 @@
+*{
+	margin: 0; 
+	padding: 0;
+	font-size: 14px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+::selection {
+	color: rgb(0, 0, 0);
+	background: rgb(237, 241, 30);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", sans-serif;
+	font-family: "Bebas Neue", sans-serif;
+	font-family: "Cal Sans", sans-serif;
+	font-family: "Francois One", sans-serif;
+	font-family: "Nixie One", system-ui;
+	font-family: "Quicksand", sans-serif;
+	
+	font-weight: 400;
+	font-style: normal
+}
+
+.container{
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 1em 0;
+}
+
+.container ul{
+  list-style-type: none;
+}
+
+.container ul li{
+  display: inline;
+  margin: 0 1em 0 0;
+}
+
+.container ul li a:hover{
+  color: red;
+}
+
+#top{
+  color: rgb(0, 0, 0);
+  padding: 0 0 1em 0;
+  background-color: #dc0e0e00;
+  border-bottom: 1px solid #ffffff;
+}
+
+#toptitle{
+  height: 0.1em;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#bottom{
+  background-color: white;
+  border-top: 1px solid rgb(211, 211, 211);
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  column-gap: 50px;
+  width: 100%;
+  margin: 1em auto;
+}
+
+.main-content-grid{
+  grid-column: 2;
+  padding-left: 25px;
+  border-left: 1px solid #00000000;
+}
+
+.grid-layout .main-content-grid > p:nth-last-of-type(1){
+  padding: 0 0 1em 0;
+  border-bottom: 1px solid #cacacabc;
+}
+
+#nav{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  border-bottom: 1px solid #ababab;
+  background-color: #ffffff;
+}
+
+.grid-layout > aside{
+  grid-column: 1;
+  border-bottom: 1px solid #115de100;
+}
+
+aside{
+  text-transform: capitalize;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.aligned-section {
+  padding: 0 0 0 1em;
+  background-color: #72708600;
+  border-left: 10px solid #cdcdcd20;
+}
+
+.aligned-section img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.main-content-grid img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+p{
+  margin: 1em 0;
+}
+
+p::first-letter{
+  text-transform: capitalize;
+}
+
+h1{
+  font-size: 2em;
+  text-transform: capitalize;
+  font-family: "Nixie One", system-ui;
+}
+
+h2{
+  margin: 1em 0;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  font-family: "Nixie One", system-ui;
+}
+
+.navigation{
+  width: 100%;
+  height: 5em;
+  margin: 0em auto;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.navigation:nth-of-type(1){
+  height: 0em;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 2800px) {
+	body{
+		margin: 3em auto;
+		width: 70%;
+		background-color: rgba(255, 255, 255, 0.832);
+	}
+
+  .container{
+    background-color: white;
+  }
+
+  .grid-layout{
+    background-color: white;
+  }
+	
+	
+	
+	
+}
+
+@media only screen and (max-width: 1400px) {
+	body{
+
+		margin: auto;
+		width: 80%;
+
+		background-color: rgba(167, 210, 24, 0);
+	}
+
+.grid-layout {
+  grid-template-columns: 200px 1fr;
+}
+	
+	
+}
+
+@media only screen and (max-width: 1000px) {
+	body{
+		
+    width: 90%;
+		background-color: rgba(0, 255, 217, 0);
+	}
+
+	
+}
+
+@media only screen and (max-width: 900px) {
+	body{
+    width: 100%;
+		background-color: rgba(0, 76, 255, 0);
+	}
+    aside{
+    font-size: 1em;
+    padding: 0 0 0 1em;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+	body{
+		background-color: rgba(208, 216, 60, 0);
+	}
+	.grid-layout {
+    grid-template-columns: 100px 1fr;
+}
+	
+}
+
+@media only screen and (max-width: 700px) {
+	body{
+		background-color: rgba(207, 13, 221, 0);
+	}
+  .grid-layout {
+    grid-template-columns: 70px 1fr;
+}
+
+  aside{
+    font-size: 0.8em;
+
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+	body{
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	
+}

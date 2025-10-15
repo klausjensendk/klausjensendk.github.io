@@ -112,7 +112,7 @@ body{
 	text-transform: capitalize;
 	font-size: 24px;
 	font-weight: bold;
-	color: rgb(75, 64, 64);
+	color: rgb(0, 0, 0);
 	margin: 10px 0;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0);
@@ -141,8 +141,7 @@ body{
 }
 
 .nav{
-	width: max-content;
-	margin-right: -20px;
+	width: 100%;
 	height: auto;
 	background-color: rgb(255, 255, 255);
 	border-bottom: 1px solid #eeeeee;
@@ -153,15 +152,12 @@ body{
 	color: rgb(0, 0, 0);
 
 	display: flex;
-	align-items: center;
-	justify-content: left;
+	align-items: right;
+	justify-content: right;
+	flex-wrap: wrap;
+	padding: 0em 0;
+	
 
-
-
-	position: sticky;
-	top: 0;
-	padding: 1em 0;
-	z-index: 3;
 
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -179,7 +175,6 @@ body{
 	display: flex;	
 	flex-direction: row;
 	flex-wrap: wrap;
-
 }
 
 .nav ul li{
@@ -205,32 +200,30 @@ nav ul li:nth-of-type(1){
 	background-color: rgba(0, 0, 0, 0.114);
 	border: 1px solid rgba(214, 214, 214, 0.2);
 	cursor: pointer;
-
 }
 
 p{
-	margin: 0 0 1em 0;
+	margin: 0 0 0.5em 0;
 	padding: 0;
-	line-height: 1.5;
+	line-height: 25px;
 	font-size: 1em;
 	font-weight: 400;
 	color: rgb(0, 0, 0);
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0);
-
 }
 
 .img_gallery{
 	width: 100%;
 	height: auto;
-	margin: 10px 0;
+	margin: 0;
 	border-radius: 5px;
-
 	object-fit: cover;
 
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 10px;
+	
 	background-color: rgba(255, 255, 255, 0);
 	padding: 10px;
 }
@@ -240,10 +233,7 @@ p{
 	transition: all 0.3s ease;
 	cursor: pointer;
 	z-index: 0;
-
-
 }
-
 
 .instructions-list{
 	width: 100%;
@@ -279,9 +269,6 @@ p{
 	transition: all 0.3s ease;
 }
 
-
-
-
 .letters{
 	width: auto;
 	height: 2.1em;
@@ -294,6 +281,7 @@ p{
 	padding: 1em;
 	border-radius: 5px;
 
+	z-index: 3;
 
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -313,7 +301,14 @@ h2{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#subli{
+	margin-bottom: 2em;
+	font-size: 12px;
+	font-weight: 400;
+	color: rgb(0, 0, 0);
 
+	background-color: rgba(255, 255, 255, 0);
+}
 
 
 

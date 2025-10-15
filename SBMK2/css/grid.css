@@ -65,7 +65,7 @@ body{
 	align-items: center;
 	justify-content: center;
 
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0);
 	cursor: pointer;
 	transition: all 0.3s ease;
 
@@ -96,7 +96,7 @@ body{
 	width: 100%;
 	height: auto;
 	background-color: rgba(255, 255, 255, 0.1);
-	border-bottom: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee00;
 	margin: 10px 0;
 	font-size: 14px;
 	font-weight: 500;
@@ -115,7 +115,7 @@ body{
 	color: rgb(75, 64, 64);
 	margin: 10px 0;
 	width: 100%;
-	background-color: rgba(188, 143, 143, 0);
+	background-color: rgba(255, 255, 255, 0);
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -339,23 +339,24 @@ h2{
 
 @media only screen and (max-width: 900px) {
 	body{
-		background-color: rgb(7, 80, 253);
+		background-color: rgba(7, 81, 253, 0);
 	}
 }
 
 @media only screen and (max-width: 800px) {
 	body{
-		background-color: rgba(208, 216, 60, 0.839);
+		background-color: rgba(208, 216, 60, 0);
 	}	
 }
 
 @media only screen and (max-width: 700px) {
 	body{
-		background-color: rgba(207, 13, 221, 0.806);
+		background-color: rgba(207, 13, 221, 0);
 	}
 
 	#leftbar{
 	visibility: hidden;
+	z-index: -1;
 	}
 
 	#main{
@@ -365,6 +366,6 @@ h2{
 
 @media only screen and (max-width: 300px) {
 	body{
-		background-color: rgba(242, 15, 15, 0.934);
+		background-color: rgba(246, 11, 11, 0);
 	}
 }

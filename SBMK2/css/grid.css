@@ -425,12 +425,24 @@ h2{
 	body{
 		background-color: rgba(7, 81, 253, 0);
 	}
+
+	#leftbar{
+	visibility: hidden;
+	z-index: -1;
+	transition: all 0.0s ease;
+	}
 }
 
 @media only screen and (max-width: 800px) {
 	body{
 		background-color: rgba(208, 216, 60, 0);
-	}	
+	}
+
+	#leftbar{
+	visibility: hidden;
+	z-index: -1;
+	transition: all 0.0s ease;
+	}
 }
 
 @media only screen and (max-width: 700px) {

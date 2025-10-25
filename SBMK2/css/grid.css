@@ -140,16 +140,18 @@ body{
 	text-transform: capitalize;
 	background-color: white;
 	z-index: 10;
+	height: auto;
 }
 
 .nav ul{
 	list-style: none;
 	margin: 0 0 0 -1em;
+	height: auto;
 }
 
 .nav li{
 	display: inline;
-	margin: 0 -1em 0 0;
+	margin: 0 -1em 1em 0;
 	padding: 1em;
 }
 

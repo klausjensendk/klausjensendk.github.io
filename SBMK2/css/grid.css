@@ -138,6 +138,7 @@ body{
 .nav ul{
 	list-style: none;
 	margin: 0 0 0 -1em;
+	font-size: 0.9em;
 }
 
 .nav ul li{
@@ -147,6 +148,8 @@ body{
 
 .nav ul a li{
 	padding: 1em;
+	background-color: rgba(255, 0, 0, 0);
+	margin: 0 -0.3em 0 0;
 }
 
 .nav ul a:nth-of-type(4) li{

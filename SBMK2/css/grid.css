@@ -53,8 +53,11 @@ body{
 .topimage img{
 	width: 100%;
 	text-align: left;
-
 	transform: scale(100%);
+
+	-webkit-user-select: none;
+	-ms-user-select: none; 
+	user-select: none; 
 }
 
 .post{
@@ -69,8 +72,6 @@ body{
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-
-
 
 .post:nth-of-type(2){
 	background-color: rgba(4, 239, 239, 0);
@@ -196,6 +197,10 @@ body{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
 }
 
 p{
@@ -250,7 +255,6 @@ p{
     width: 100%;
     object-fit: cover;
     display: block;
-
 }
 
 .bottompost p{
@@ -263,6 +267,20 @@ p{
 
 #clearright{
 	width: 95%
+}
+
+.copyright{
+	font-size: 0.7em;
+	color: rgba(174, 174, 174, 0.698);
+	margin: 2em 0 0 0;
+	width: auto;
+	padding: 1em 1em 0 0;
+	bottom: 0;
+	position: sticky;
+	background-color: rgba(255, 255, 255, 0.175);
+
+	z-index: 11;
+
 }
 
 @media only screen and (max-width: 2800px) {

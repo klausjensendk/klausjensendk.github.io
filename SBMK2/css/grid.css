@@ -151,8 +151,13 @@ body{
 
 .nav li{
 	display: inline;
-	margin: 0 -1em 1em 0;
+	margin: 1em -1em 1em 0;
 	padding: 1em;
+}
+
+.nav li a{
+	margin: 1em -1em 1em 0;
+
 }
 
 .nav li:hover{

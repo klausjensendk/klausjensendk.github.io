@@ -34,6 +34,7 @@ body{
 	font-family: "Francois One", sans-serif;
 	font-family: "Roboto", sans-serif;
 	font-family: "Quicksand", sans-serif;
+	font-family: "Archivo", sans-serif;
 
 	font-weight: 400;
 	font-style: normal
@@ -111,16 +112,16 @@ body{
 	transform: scale(1.75);
 }
 
-#titlebg{
-	background-color: rgba(171, 197, 158, 0);
+#h2{
 	color: rgb(237, 191, 24);
-	font-weight: 600;
-	font-size: 2em;
-	width: auto;
-	height: auto;
+	transform: scale(155%);
+	text-align: left;
+	margin-left: 5em;
+	border: none;
 
-	padding: 1em 0 1em 0.5em;
-	font-family: "Archivo", sans-serif;
+	display: inline-block;
+	width: auto;
+
 }
 
 .title{
@@ -176,32 +177,29 @@ body{
 .section:nth-of-type(3){
 	position: sticky;
 	top: 0;
-
-	background-color: rgba(17, 201, 11, 0);
 }
-.section:nth-of-type(3){
-	background-color: rgba(206, 218, 43, 0);
-}
+.section:nth-of-type(3){}
 .section:nth-of-type(4){
 	background-color: rgba(64, 179, 19, 0);
 }
 .section:nth-of-type(5){
-	background-color: rgba(43, 218, 128, 0);
-}
-.section:nth-of-type(6){
-	background-color: rgba(43, 218, 192, 0);
-}
-.section:nth-of-type(7){
-	background-color: rgba(145, 203, 232, 0);
+	display: none;
+	visibility: hidden;
+	background-color: rgba(186, 194, 221, 0.311);
 }
 .section:last-of-type{
-	background-color: rgb(197, 214, 185);
+	background-color: rgb(255, 255, 255);
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 p{
 	font-size: 1em;
-	font-family: "Quicksand", sans-serif;
+	font-weight: 100;
 	border: none;
+	line-height: 1.6em;
 }
 
 /* grid */
@@ -210,25 +208,22 @@ p{
 	grid-template-columns: 1fr 2fr;
 	gap: 1em;
 	padding: 1em;
-	background: #f0f0f000;
 }
 
 .sub-grid {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	gap: 2px;
-	background: #ffffff;
 	padding: 2px;
 	border: 1px solid #cccccc00;
 }
 
 .sub-grid > div {
-	background: #d0eaff00;
 	padding: 0.5em 0;
 	margin: 0.5em;
 	text-align: left;
 	border-bottom: 1px solid #e9e9e9;
-	font-family: "Quicksand", sans-serif;
+	font-weight: 100;
 	line-height: 1.5em;
 	font-size: 0.9em;
 }
@@ -239,15 +234,28 @@ p{
 }
 /* grid end */
 
-.bottomimg{
-	width: 25%;
-	float: left;
+.bottompost{
+	margin: 1em 0 1em 1em;
+	width: 20%;
+	background-color: rgba(34, 255, 0, 0);
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
-.bottomimg img{
+.bottompost img{
 	width: 100%;
 }
 
+.bottompost p{
+	columns: 1;
+	font-size: 0.8em;
+}
+
+#clearright{
+	width: 95%
+}
 
 @media only screen and (max-width: 2800px) {
 	body{
@@ -260,9 +268,6 @@ p{
 	p{
 		columns: 3;
 	}
-
-
-
 }
 
 @media only screen and (max-width: 1400px) {
@@ -271,8 +276,6 @@ p{
 
 		width: 100%;
 	}
-
-	
 }
 
 @media only screen and (max-width: 1000px) {
@@ -283,15 +286,12 @@ p{
 	p{
 		columns: 1;
 	}
-
 }
 
 @media only screen and (max-width: 900px) {
 	body{
 		background-color: rgba(7, 81, 253, 0);
 	}
-
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -305,7 +305,6 @@ p{
 		grid-template-columns: 1fr;
 		gap: 0.5em;
 		padding: 1em;
-
 	}
 
 	.sub-grid {
@@ -313,14 +312,12 @@ p{
 		display: grid;
 		grid-template-columns: 1fr 3fr;
 		gap: 2px;
-		background: #ffffff;
 		padding: 2px;
 		margin: 0 0 1em 0;
 		border-top: 1px solid #bdbdbdcf;
 	}
 
 	.sub-grid > div {
-		background: #d0eaff00;
 		padding: 0.5em 0;
 		margin: 0.5em;
 		text-align: left;
@@ -329,10 +326,6 @@ p{
 		font-size: 0.9em;
 	}
 
-	.topline{
-		color: grey;
-		font-size: 0.8em;
-	}
 	/* grid end */
 }
 

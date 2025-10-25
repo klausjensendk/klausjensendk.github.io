@@ -115,10 +115,9 @@ body{
 	color: rgb(237, 191, 24);
 	font-weight: 600;
 	font-size: 2em;
-	padding: 1em 0 1em 1em;
+	width: auto;
 	line-height: 1.4px;
 	padding: 1em 0 1em 0.5em;
-	
 	font-family: "Archivo", sans-serif;
 }
 

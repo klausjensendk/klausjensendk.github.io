@@ -341,10 +341,12 @@ p{
 
 	.topimage img{
 		margin: 0 0 0 0.5em;
+	}
 
-	transform: scale(100%);
-}
-
+	#h2{
+		transform: scale(125%);
+		margin-left: 2em;
+	}
 }
 
 @media only screen and (max-width: 300px) {

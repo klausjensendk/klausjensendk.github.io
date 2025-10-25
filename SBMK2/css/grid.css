@@ -318,16 +318,17 @@ p{
 		margin: 0.5em;
 		text-align: left;
 		border-bottom: 1px solid #e9e9e9;
-
 		font-size: 0.9em;
 	}
 
 	/* grid end */
+
+
+	#h2{
+		transform: scale(115%);
+		margin-left: 1.2em;
+	}
 }
-
-
-
-
 
 @media only screen and (max-width: 700px) {
 	body{
@@ -342,11 +343,7 @@ p{
 	.topimage img{
 		margin: 0 0 0 0.5em;
 	}
-
-	#h2{
-		transform: scale(125%);
-		margin-left: 2em;
-	}
+	
 }
 
 @media only screen and (max-width: 300px) {

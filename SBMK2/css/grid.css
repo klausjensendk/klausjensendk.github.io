@@ -149,12 +149,12 @@ body{
 
 .nav li{
 	display: inline;
-	margin: 0 0 -0em 0;
+	margin: 0 -1em 0 0;
 	padding: 1em;
 }
 
 .nav li:hover{
-	background-color: aqua;
+	background-color: rgb(245, 245, 245);
 }
 
 .section{

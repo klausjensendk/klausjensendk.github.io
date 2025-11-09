@@ -1,0 +1,189 @@
+*{
+	margin: 0; 
+	padding: 0;
+	font-size: 14px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+::selection {
+	color: rgb(0, 0, 0);
+	background: rgb(199, 201, 91);
+}
+
+h1, p {
+	margin: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+
+	font-family: "Bebas Neue", sans-serif;
+	font-family: "Quicksand", sans-serif;
+	font-family: "Archivo", sans-serif;
+	font-family: "Nixie One", system-ui;
+	font-family: "Francois One", sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-family: "Quicksand", sans-serif;
+	font-family: "Archivo", sans-serif;
+
+	font-weight: 300;
+	font-style: normal
+}
+
+.header{
+	margin: 1em 0;
+}
+
+.box{
+	margin: 0 1em;
+}
+
+.parent {
+	padding: 0.5em 0;
+	margin: 0.5em 0;
+	border-bottom: 1px solid rgba(201, 201, 201, 0);
+	display: grid;
+	grid-template-columns: 8em 10em auto;
+	grid-template-rows: auto auto auto auto;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.parent .element:nth-of-type(1){
+	background-color: rgba(166, 255, 0, 0);
+	margin: 0.5em 0 0 1em;
+}
+
+.parent:nth-child(1){
+	font-weight: 700;
+	margin: 1em 0 0 0;
+	background-color: aqua;
+}
+
+.element {
+	margin: 0.5em 1em 0 0;
+	padding: 0.5em 0;
+	line-height: 1.5em;
+	border-top: 1px solid rgba(218, 218, 218, 0.772);
+}
+
+.element:nth-of-type(1){
+	background-color: rgba(0, 255, 255, 0);
+	font-weight: 700;
+}
+
+.nav{
+	position: sticky;
+	top: 0;
+
+	background-color: white;
+	z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 2800px) {
+	body{
+		background-color: rgba(218, 13, 13, 0);
+
+		width: 60%;
+		margin: auto;
+	}
+
+	.element p{
+		columns: 3;
+	}
+
+
+}
+
+@media only screen and (max-width: 1400px) {
+	body{
+		background-color: rgba(167, 210, 24, 0);
+		width: 100%;
+	}
+
+	.element p{
+		columns: 2;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	body{
+		background-color: rgba(0, 255, 217, 0);
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+	body{
+		background-color: rgba(7, 81, 253, 0);
+	}
+
+	.element p{
+		columns: 1;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	body{
+		background-color: rgba(226, 238, 8, 0);
+	}
+
+}
+
+@media only screen and (max-width: 700px) {
+	body{
+		background-color: rgba(207, 13, 221, 0);
+	}
+
+	.parent {
+		grid-template-columns: 0em 8em auto;
+	}
+
+	.parent .element:nth-of-type(1){
+		background-color: rgba(166, 255, 0, 0);
+		margin: 0.5em 0 0 1em;
+
+	}
+
+	.parent .element:nth-of-type(2){
+		background-color: rgba(166, 255, 0, 0);
+		margin: 3.5em 0 0 1em;
+		padding: 0 1em 0 0;
+		border: none;
+		font-size: 0.9em;
+	}
+
+
+
+
+}
+
+@media only screen and (max-width: 300px) {
+	body{
+		background-color: rgba(246, 11, 11, 0);
+	}
+}

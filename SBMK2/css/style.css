@@ -326,6 +326,10 @@ body{
 		grid-template-columns: 1fr;
 	}
 
+	.post1-5-2{
+		grid-template-columns: 1fr 1fr;
+	}
+
 	.post1-12{
 		grid-template-columns: 1fr;
 	}

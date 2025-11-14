@@ -85,7 +85,7 @@ body{
 	padding-right: 1em;
 	background-color: rgba(255, 255, 255, 0);
 	color: #000000ff;
-	border-top: 1px solid #000000ec;
+	border-top: 1px solid #c7c7c7ec;
 }
 
 .bottom .post p{
@@ -95,19 +95,17 @@ body{
 .post{
 	padding: 0;
 	margin: 0 0 1em 0;
-	
 
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: stretch;
-	
 }
 
 .post div{
 	width: 100%;
 	height: auto;
-	margin: 0 0em 1em 0;
+	margin: 0 0 1em 0;
 	padding: 0;
 }
 
@@ -127,9 +125,8 @@ body{
 	border-bottom: 1px solid #6d8aff79;
 }
 
-
 .post a:hover{
-	color: #7571f1ec;
+	color: #1e17e7ec;
 }
 
 .post img{
@@ -188,7 +185,7 @@ body{
 	font-size: 1.3em;
 	background-color: rgba(0, 0, 0, 0);
 	color: rgb(0, 0, 0);
-	border-right: 3px solid black;
+	border-right: 1px solid rgb(122, 122, 122);
 	text-transform: capitalize;
 }
 
@@ -199,7 +196,16 @@ body{
 	font-weight: 700;
 	text-align: center;
 	text-transform: capitalize;
-	border-bottom: 1px solid rgba(65, 65, 65, 0.645);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.331);
+}
+
+.post #gallery {
+	transition: transform 0.3s ease;
+	border: none;
+}
+
+.post #gallery:hover {
+	transform: scale(2);
 }
 
 .post1-1{
@@ -262,14 +268,6 @@ body{
 	gap: 1em;
 }
 
-.post #gallery {
-	transition: transform 0.3s ease;
-	border: none;
-}
-
-.post #gallery:hover {
-	transform: scale(2);
-}
 
 
 

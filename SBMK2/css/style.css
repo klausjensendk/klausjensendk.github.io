@@ -65,12 +65,16 @@ body{
 	border: none;
 }
 
+
+
+
+
 .title{
 	display: grid;
 	grid-template-columns: 3fr 3fr 3fr 3fr;
 }
 
-.title div{
+.title div a{
 	margin: 0 0 0 0.5em;
 	padding: 0.5em 0;
 	font-weight: 500;
@@ -183,14 +187,27 @@ body{
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	display: block;
+	filter: grayscale();
 	border-top: 1px solid #00000031;
 }
+
+.post img:hover{
+	filter: none;
+} 
 
 .post ul{
 	padding: 0.5em;
 	list-style: none;
 	text-transform: capitalize;
 	border-top: 1px solid #00000031;
+}
+
+#ingredients2 li{
+	padding: 0.1em 0;
+	font-size: 0.9em;
+	list-style: none;
+	text-transform: capitalize;
+	1border-top: 1px solid #00000031;
 }
 
 .post ul li{
@@ -223,6 +240,7 @@ body{
 .post #gallery {
 	transition: transform 0.3s ease;
 	border: none;
+	
 }
 
 .post #gallery:hover {
@@ -285,6 +303,7 @@ body{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 	gap: 1em;
+	z-index: 100;
 }
 
 .post1-8{
@@ -420,6 +439,10 @@ body{
 
 	.post1-4-2{
 		grid-template-columns: 1fr;
+	}
+
+	.post1-4-nav{
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 
 	.post1-8{

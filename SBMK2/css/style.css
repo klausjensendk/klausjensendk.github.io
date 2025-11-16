@@ -89,7 +89,7 @@ body{
 }
 
 .bottom .post p{
-	border-bottom: 1px solid #cacacaec;
+	border-top: 1px solid #cacacaec;
 }
 
 #food > div > div > div:nth-of-type(1){
@@ -140,10 +140,10 @@ body{
 	font-family: "Saira", sans-serif;
 }
 
-
 .post{
 	padding: 0;
 	margin: 0 0 1em 0;
+	line-height: 1.5em;
 
 	display: flex;
 	flex-direction: row;
@@ -200,6 +200,7 @@ body{
 .post h2{
 	color: grey;
 	font-weight: 100;
+	font-size: 0.8em;
 }
 
 .post span{
@@ -229,21 +230,20 @@ body{
 }
 
 .post .date{
-	font-size: 0.6em;
+	font-size: 0.8em;
 	font-weight: 900;
-	padding: 0.5em 0 0.5em -1em;
-	margin: 1em 0 1em -1em;
-	color: rgb(102, 150, 240);
+	padding: 0 0 0.5em -0.5em;
+	margin: 0 0 1em -0.5em;
+	color: rgb(67, 125, 249);
 }
 
 .post > div > .date{
-	font-size: 0.6em;
+	font-size: 0.8em;
 	font-weight: 900;
 	padding: 0.5em 0 0.5em -1em;
-	margin: 0;
-	color: rgb(102, 150, 240);
+	margin: 1em 0;
+	color: rgb(94, 150, 254);
 }
-
 
 .post1-1{
 	display: grid;
@@ -287,21 +287,9 @@ body{
 	gap: 1em;
 }
 
-.post1-5-2{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 2fr;
-	gap: 1em;
-}
-
 .post1-8{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	gap: 1em;
-}
-
-.post1-8-2{
-	display: grid;
-	grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr 1fr 4fr;
 	gap: 1em;
 }
 
@@ -321,7 +309,7 @@ body{
 	background-image: url('/images/santa.png');
 	background-size: 1.9em;
 	background-repeat: no-repeat;
-	background-position: bottom right;
+	background-position: top right;
 }
 
 
@@ -346,8 +334,6 @@ body{
 		padding-left: 21%;
 		padding-right: 21%;
 	}
-
-
 }
 
 @media only screen and (max-width: 1400px) {
@@ -432,20 +418,12 @@ body{
 		grid-template-columns: 1fr;
 	}
 
-	.post1-8{
-		grid-template-columns: 1fr;
-	}
-
-	.post1-8-2{
-		grid-template-columns: 1fr;
-	}
-
 	.post1-4-2{
 		grid-template-columns: 1fr;
 	}
 
-	.post1-5-2{
-		grid-template-columns: 1fr 1fr;
+	.post1-8{
+		grid-template-columns: 1fr;
 	}
 
 	.post1-12{

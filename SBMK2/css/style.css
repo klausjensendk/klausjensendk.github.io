@@ -42,6 +42,12 @@ body{
 	gap: 1em;
 }
 
+.outer1-2 > div > div:nth-of-type(1) *{
+	background-color: rgba(255, 0, 0, 0);
+	font-weight: 500;
+	border-top: none;
+}
+
 .container{
 	border-bottom: 3px solid rgba(255, 0, 0, 0);
 }
@@ -86,75 +92,18 @@ body{
 	border-bottom: 1px solid #cacacaec;
 }
 
-.post{
-	padding: 0;
-	margin: 0 0 1em 0;
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: stretch;
+#food > div > div > div:nth-of-type(1){
+	background-color: rgba(255, 0, 0, 0);
+	height: 100%;
 }
 
-.post div{
-	width: 100%;
-	height: auto;
-	margin: 0 0 1em 0;
-	padding: 0;
-}
-
-.post p{
-	width: 100%;
-	margin: 0;
-	padding: 0.5em 0;
-	border-bottom: 1px solid #00000031;
-}
-
-.post p a{
-	color: #6d8bff;
-	margin: 1em 0;
-	padding: 0.5em 0;
-	font-weight: 400;
-	border-bottom: 1px solid #6d8aff79;
-}
-
-.post a:hover{
-	color: #1e17e7ec;
-}
-
-.post img{
-	padding: 0.5em 0;
-	width: 100%;
-	aspect-ratio: 1 / 1;
-	object-fit: cover;
-	display: block;
-	border-bottom: 1px solid #00000031;
-}
-
-.post ul{
-	padding: 0.5em;
-	list-style: none;
-	text-transform: capitalize;
-	border-bottom: 1px solid #00000031;
-}
-
-.post ul li{
-	margin: 0 0 1em 0;
-}
-
-.post h2{
-	color: grey;
-	font-weight: 100;
-}
-
-.post span{
-	margin: 1em 0;
-}
 
 .sticky{
 	position: sticky;
-	top: 0;
+	top: -1px;
 	background-color: white;
+	margin: 1em 0 0 0;
+	border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .headline{
@@ -173,20 +122,99 @@ body{
 
 .headline3px{
 	padding: 1em;
-	font-weight: 700;
-	font-size: 1.3em;
+	font-weight: 500;
+	font-size: 1.2em;
 	color: rgb(0, 0, 0);
-	border-right: 1px solid rgb(0, 0, 0);
+
+	border-right: 1px solid rgba(0, 0, 0, 0.594);
 	text-transform: capitalize;
+}
+
+.headline3px myDiv1{
+	display: block;
+	font-weight: 700;
+	font-size: 0.7em;
+	margin: 1em 0;
+	text-transform: capitalize;
+}
+
+
+.post{
+	padding: 0;
+	margin: 0 0 1em 0;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.post div{
+	width: 100%;
+	height: auto;
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+.post p{
+	width: 100%;
+	margin: 0;
+	padding: 0.5em 0;
+	border-top: 1px solid #00000031;
+}
+
+.post p a{
+	color: #496eff;
+	margin: 1em 0;
+	padding: 0.5em 0;
+	font-weight: 500;
+	border-bottom: 1px solid #4368fa8e;
+}
+
+.post a:hover{
+	color: #1e17e7ec;
+}
+
+.post img{
+	padding: 0.5em 0;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	display: block;
+	border-top: 1px solid #00000031;
+}
+
+.post ul{
+	padding: 0.5em;
+	list-style: none;
+	text-transform: capitalize;
+	border-top: 1px solid #00000031;
+}
+
+.post ul li{
+	margin: 0 0 1em -0.5em;
+}
+
+.post h2{
+	color: grey;
+	font-weight: 100;
+}
+
+.post span{
+	margin: 1em 0;
 }
 
 .post .divider{
 	padding: 0.5em 0;
 	margin: 0.5em 0;
-	font-weight: 700;
+	font-weight: 900;
+	font-size: 1.3em;
 	text-align: center;
 	text-transform: capitalize;
+	color: #000000;
+	letter-spacing: 0.05em;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.331);
+	font-family: "Roboto Flex", sans-serif;
 }
 
 .post #gallery {
@@ -197,6 +225,23 @@ body{
 .post #gallery:hover {
 	transform: scale(2);
 }
+
+.post .date{
+	font-size: 0.6em;
+	font-weight: 900;
+	padding: 0.5em 0 0.5em -1em;
+	margin: 1em 0 1em -1em;
+	color: rgb(102, 150, 240);
+}
+
+.post > div > .date{
+	font-size: 0.6em;
+	font-weight: 900;
+	padding: 0.5em 0 0.5em -1em;
+	margin: 0;
+	color: rgb(102, 150, 240);
+}
+
 
 .post1-1{
 	display: grid;
@@ -234,6 +279,12 @@ body{
 	gap: 1em;
 }
 
+.post1-4-nav{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+	gap: 1em;
+}
+
 .post1-5-2{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 2fr;
@@ -258,6 +309,23 @@ body{
 	gap: 1em;
 }
 
+/* Xmas styling */
+
+.xmas *{
+	color: rgb(255, 0, 0);
+}
+
+.xmas:nth-child(2){
+	background-image: url('/images/santa.png');
+	background-size: 1.9em;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+
+
+
+
 
 
 @media only screen and (max-width: 2800px) {
@@ -276,6 +344,8 @@ body{
 		padding-left: 21%;
 		padding-right: 21%;
 	}
+
+
 }
 
 @media only screen and (max-width: 1400px) {

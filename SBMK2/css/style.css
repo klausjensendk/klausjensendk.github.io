@@ -442,7 +442,7 @@ body{
 	}
 
 	.post1-4-nav{
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
 	}
 
 	.post1-8{

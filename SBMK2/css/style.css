@@ -195,6 +195,16 @@ body{
 	filter: none;
 } 
 
+.bottom .post div p{
+	opacity: 0.1;
+}
+
+
+.bottom .post div p:hover{
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
 .post ul{
 	padding: 0.5em;
 	list-style: none;

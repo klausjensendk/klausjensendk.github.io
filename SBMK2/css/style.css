@@ -195,15 +195,7 @@ body{
 	filter: none;
 } 
 
-.bottom .post div p{
-	opacity: 0.1;
-}
 
-
-.bottom .post div p:hover{
-	opacity: 1;
-	transition: opacity 0.3s ease;
-}
 
 .post ul{
 	padding: 0.5em;
@@ -218,6 +210,10 @@ body{
 	list-style: none;
 	text-transform: capitalize;
 	1border-top: 1px solid #00000031;
+}
+
+.recipetitle{
+	font-weight: 700;
 }
 
 .post ul li{
@@ -452,7 +448,7 @@ body{
 	}
 
 	.post1-4-nav{
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
 	.post1-8{

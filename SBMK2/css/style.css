@@ -434,6 +434,10 @@ body{
 		background-color: rgba(41, 221, 13, 0);
 	}
 
+	.title div a{
+		font-size: 2em;
+	}
+
 	.post1-4{
 		grid-template-columns: 1fr 1fr;
 	}

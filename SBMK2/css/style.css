@@ -35,12 +35,30 @@ body{
 }
 
 .post{
-	margin: 0.5em;
+	margin: 0.2em 1em;
 	padding: 0.3em 0;
 	
 	display: grid;
 	gap: 1em;
 	background-color: rgba(231, 13, 13, 0);
+}
+
+.post ul{
+	list-style-type: none;
+	padding: 1em 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.post li{
+	margin: 0 0 1em 0;
+	font-weight: 500;
+}
+
+.post li:nth-of-type(1){
+	font-weight: 700;
 }
 
 .nav{
@@ -54,6 +72,7 @@ body{
 	padding: 0;
 	margin: 0;
 	display: flex;
+	flex-direction: row;
 	gap: 1em;
 }
 
@@ -94,6 +113,7 @@ body{
 
 .post img{
 	width: 100%;
+	padding: 1em 0;
 }
 .post1{
 	grid-template-columns: 1fr;
@@ -122,13 +142,24 @@ body{
 }
 
 #title{
-	font-weight: 700;
+	font-weight: 300;
 	text-transform: capitalize;
-	font-size: 1.5em;
+	font-size: 1.3em;
+	
 }
 
-#home, #about, #recipe1, #recipe2, #recipe3 {
-	padding: 0.7em 0;
+#home,
+#recipe1,
+#recipe2,
+#recipe3,
+#recipe4,
+#recipe5,
+#recipe6,
+#recipe7,
+#recipe8,
+#recipe9,
+#about{
+	padding: 1.1em 0;
 	color: rgb(0, 0, 0);
 }
 
@@ -156,17 +187,23 @@ body{
 	display: none;
 }
 
-#s1, #s2, #s3 {
+#s1, #s2, #s3, #s4 #s5, #s6, #s7, #s8, #s9 {
 	display: none; 
 }
 
 #s1:checked ~ .toggled-content,
 #s2:checked ~ .toggled-content,
-#s3:checked ~ .toggled-content {
+#s3:checked ~ .toggled-content,
+#s4:checked ~ .toggled-content,
+#s5:checked ~ .toggled-content,
+#s6:checked ~ .toggled-content,
+#s7:checked ~ .toggled-content,
+#s8:checked ~ .toggled-content,
+#s9:checked ~ .toggled-content {
 	display: block;
 }
 
-label[for="s1, s2, s3"] {
+label[for="s1, s2, s3, s4, s5, s6, s7, s8. s9"] {
 	cursor: pointer;
 	padding: 0;
 	font-size: 1.2em;
@@ -178,10 +215,6 @@ label:hover {
 	color: red;
 	cursor: pointer;
 }
-
-
-
-
 
 
 

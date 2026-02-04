@@ -1,0 +1,301 @@
+*{
+	margin: 0; 
+	padding: 0;
+	font-size: 14px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+::selection {
+	color: rgb(0, 0, 0);
+	background: rgb(247, 251, 17);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	font-style: normal;
+
+	font-family: "Inter", sans-serif;
+	font-family: "Bebas Neue", sans-serif;
+	font-family: "Roboto Flex", sans-serif;
+	font-family: "Archivo", sans-serif;
+	font-family: "Lora", serif;
+	font-family: "Saira", sans-serif;
+	font-family: "Noto Sans", sans-serif;
+	
+}
+
+.post{
+	margin: 0.2em 1em;
+	padding: 0.3em 0;
+	
+	display: grid;
+	gap: 1em;
+	background-color: rgba(231, 13, 13, 0);
+}
+
+.post ul{
+	list-style-type: none;
+	padding: 1em 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.post li{
+	margin: 0 0 1em 0;
+	font-weight: 500;
+}
+
+.post li:nth-of-type(1){
+	font-weight: 700;
+}
+
+.nav{
+	position: sticky;
+	top: 0;
+	background-color: white;
+}
+
+.nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+}
+
+.nav li a{
+	padding: 0.5em 0;
+	font-weight: 500;
+}
+
+.nav li a:hover{
+	color: red;
+	cursor: pointer;
+}
+
+.title p{
+	font-size: 1.8em;
+	margin: 0 0 0 -0.005em;
+	font-weight: 700;
+	font-family: "Bebas Neue", sans-serif;
+	letter-spacing: 0.07em;
+}
+
+.post p{
+	padding: 1em 0;
+}
+
+.post .post .post div:nth-of-type(1),
+.post .post .post div:nth-of-type(2){
+	font-weight: 700;
+}
+
+.post div{
+	margin: 0;
+}
+
+.post div div{
+	margin: 0.1em 0;
+}
+
+.post img{
+	width: 100%;
+	padding: 1em 0;
+}
+.post1{
+	grid-template-columns: 1fr;
+	border-bottom: 1px solid #98989877;
+}
+
+.post2{
+	grid-template-columns: 1fr 1fr;
+	border-bottom: 1px solid #98989877;
+}
+
+.post3{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	border-bottom: 1px solid #98989877;
+}
+
+.post4{
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	border-bottom: 1px solid #98989877;
+}
+
+.post1-10{
+	grid-template-columns: 1fr 10fr;
+	border-bottom: 1px solid #98989877;
+}
+
+#title{
+	font-weight: 300;
+	text-transform: capitalize;
+	font-size: 1.3em;
+	
+}
+
+#home,
+#recipe1,
+#recipe2,
+#recipe3,
+#recipe4,
+#recipe5,
+#recipe6,
+#recipe7,
+#recipe8,
+#recipe9,
+#about{
+	padding: 1.1em 0;
+	color: rgb(0, 0, 0);
+}
+
+.bottom img{
+	width: 100%;
+	filter: invert();
+}
+
+.bottom img:hover{
+	filter: none;
+}
+
+.bold{
+	font-weight: 700;
+}	
+
+
+
+
+
+
+
+
+.toggled-content {
+	display: none;
+}
+
+#s1, #s2, #s3, #s4 #s5, #s6, #s7, #s8, #s9 {
+	display: none; 
+}
+
+#s1:checked ~ .toggled-content,
+#s2:checked ~ .toggled-content,
+#s3:checked ~ .toggled-content,
+#s4:checked ~ .toggled-content,
+#s5:checked ~ .toggled-content,
+#s6:checked ~ .toggled-content,
+#s7:checked ~ .toggled-content,
+#s8:checked ~ .toggled-content,
+#s9:checked ~ .toggled-content {
+	display: block;
+}
+
+label[for="s1, s2, s3, s4, s5, s6, s7, s8. s9"] {
+	cursor: pointer;
+	padding: 0;
+	font-size: 1.2em;
+	color: rgb(0, 0, 0);
+	display: inline-block;
+}
+
+label:hover {
+	color: red;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 2800px) {
+	body{
+		background-color: rgba(218, 13, 13, 0);
+
+		width: 60%;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	body{
+		background-color: rgba(209, 236, 122, 0);
+		width: 80%;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	body{
+		background-color: rgba(37, 211, 185, 0);
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	body{
+		background-color: rgba(26, 167, 43, 0);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	body{
+		background-color: rgba(8, 85, 238, 0);
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	body{
+		background-color: rgba(41, 221, 13, 0);
+	}
+
+	.post1{
+		grid-template-columns: 1fr;
+	}
+
+	.post2{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.post3{
+		grid-template-columns: 1fr 1fr ;
+	}
+
+	.post4{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.post1-10{
+		grid-template-columns: 1fr;
+	}
+
+	#hidden{
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 300px) {
+	body{
+		background-color: rgba(246, 11, 11, 0);
+	}
+}

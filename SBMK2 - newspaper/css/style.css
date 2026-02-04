@@ -1,0 +1,270 @@
+*{
+	margin: 0; 
+	padding: 0;
+	font-size: 14px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+::selection {
+	color: rgb(0, 0, 0);
+	background: rgb(247, 251, 17);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	font-style: normal;
+
+	font-family: "Bebas Neue", sans-serif;
+	font-family: "Inter", sans-serif;
+	font-family: "Roboto Flex", sans-serif;
+	font-family: "Saira", sans-serif;
+	font-family: "Archivo", sans-serif;
+	font-family: "Lora", serif;
+	font-family: "Noto Sans", sans-serif;
+}
+
+.outer{
+	margin: 1em;
+}
+
+.post{
+	margin: 0;
+	padding: 1em 0 0 0;
+	line-height: 1.5em;
+}
+
+.post div{
+	border-bottom: 1px solid rgb(150, 150, 150);
+	margin: 0 0 0.5em 0;
+	padding: 0 0 0.5em 0;
+}
+
+.container2{
+	display: grid;
+	grid-template-columns: 2fr 14fr;
+	gap: 1em;
+}
+
+.container2 div:nth-of-type(odd) {
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.container4{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 1em;
+}
+
+.container4 p{
+	line-height: 1.4em;
+	font-size: 0.9em;
+	border-bottom: 1px solid grey;
+}
+
+.container33{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1em;
+}
+
+.container33 img{
+	width: 100%;
+	margin: 0 0 1em 0;
+	height: auto;
+	object-fit: cover;
+}
+
+.title1 div{
+	font-size: 1.5em;
+	font-weight: 600;
+	border-bottom: 2px solid black;
+}
+
+.title div{
+	font-size: 1.3em;
+	font-weight: 600;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.nav{
+	margin: 0;
+	padding: 0.5em 0 1em 0;
+	border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+.nav ul{
+	list-style-type: none;
+	display: flex;
+	gap: 1em;
+}
+
+.nav ul li{
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.nav li a:hover{
+	color: blue;
+}
+
+.list{
+	margin: 2em 0;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.list p{
+	padding: 0.1em 0;
+	margin: 1em 0;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.list p a:hover{
+	color: blue;
+	cursor: pointer;
+}
+
+#recipe1 ol,
+#recipe2 ol,
+#recipe3 ol,
+#recipe4 ol,
+#recipe5 ol{
+	margin: 0.5em 0;
+	list-style-type: none;
+	background-color: rgba(255, 0, 0, 0);
+	border-bottom: 1px solid grey;
+}
+
+#recipe1 li,
+#recipe2 li,
+#recipe3 li,
+#recipe4 li,
+#recipe5 li{
+	margin: 0 0 1em 0em;
+	padding: 0em 0;
+}
+
+#recipe1 div:nth-of-type(odd),
+#recipe2 div:nth-of-type(odd),
+#recipe3 div:nth-of-type(odd),
+#recipe4 div:nth-of-type(odd),
+#recipe5 div:nth-of-type(odd){
+	padding: 0;
+	margin: 0.5em 0;
+	background-color: rgba(133, 210, 18, 0);
+}
+
+#recipe1 .post div:nth-of-type(2),
+#recipe2 .post div:nth-of-type(2),
+#recipe3 .post div:nth-of-type(2),
+#recipe4 .post div:nth-of-type(2),
+#recipe5 .post div:nth-of-type(2){
+	padding: 0;
+	margin: 0.5em 0;
+	background-color: rgba(255, 255, 0, 0);
+	font-weight: 500;
+}
+
+.photo img{
+	width: 100%;
+	padding: 0 0 1em 0;
+	margin: 0 0 1em 0;
+	height: auto;
+	object-fit: cover;
+	border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.title p{
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: rgba(255, 0, 0, 0);
+}
+
+#gototop a{
+	position: fixed;
+	top: 1em;
+	right: 1em;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	font-weight: 700;
+	padding: 0.3em 0.5em;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width: 2800px) {
+	body{
+		background-color: rgba(218, 13, 13, 0);
+
+		width: 60%;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	body{
+		background-color: rgba(209, 236, 122, 0);
+		width: 80%;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	body{
+		background-color: rgba(37, 211, 185, 0);
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	body{
+		background-color: rgba(26, 167, 43, 0);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	body{
+		background-color: rgba(8, 85, 238, 0);
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	body{
+		background-color: rgba(210, 191, 14, 0);
+	}
+
+	.container2{
+		grid-template-columns: 1fr;
+	}
+
+	.container4{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.container33{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	body{
+		background-color: rgba(246, 11, 11, 0);
+	}
+}

@@ -119,6 +119,7 @@ body{
 	max-width: 100%;
 	height: auto;
 	display: block;
+	aspect-ratio: 1/1;
 }
 
 .post{
@@ -148,11 +149,6 @@ body{
 	transition: 0.5s;
 }
 
-.lines{
-	padding: 0.3em 0 0 0;
-	text-transform: capitalize;
-}
-
 .bold{
 	padding: 0.1em;
 	font-size: 0.8em;
@@ -164,6 +160,7 @@ body{
 .lines{
 	padding: 0.1em;
 	font-size: 0.8em;
+	text-transform: capitalize;
 	color: rgb(158, 158, 158);
 	border-bottom: 1px solid rgba(223, 10, 10, 0);
 }
@@ -251,7 +248,7 @@ body{
 	}
 	.container .postcontainer img{
 		width: 100%;
-		max-height: 20em;
+		max-height: 10em;
 	}
 }
 
@@ -275,10 +272,7 @@ body{
 	.gallery{
 		grid-template-columns: repeat(3, 1fr);
 	}
-	.container .postcontainer img{
-		width: 100%;
-		max-height: 20em;
-	}
+
 }
 
 @media only screen and (max-width: 1400px) {
@@ -299,7 +293,7 @@ body{
 	}
 	.container .postcontainer img{
 		width: 100%;
-		min-height: 30em;
+		min-height: 20em;
 	}
 	.right{
 		grid-template-columns: repeat(2, 1fr);
@@ -330,7 +324,7 @@ body{
 
 @media only screen and (max-width: 800px) {
 	body{
-		background-color: rgba(242, 255, 0, 0);
+		background-color: rgba(242, 255, 0, 0.375);
 		width: 96%;
 		margin: 0 auto;
 	}
@@ -377,6 +371,6 @@ body{
 
 @media only screen and (max-width: 300px) {
 	body{
-		background-color: rgba(246, 11, 11, 0);
+		background-color: rgb(21, 255, 0);
 	}	
 }

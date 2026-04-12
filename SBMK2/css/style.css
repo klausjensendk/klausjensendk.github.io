@@ -49,7 +49,7 @@ body{
 .divide2{
 	display: grid;
 	grid-template-columns: repeat(1, 1fr 5fr);
-	gap: 0 3em;
+	gap: 0 2em;
 }
 
 .right{
@@ -58,14 +58,12 @@ body{
 
 ol li::marker{
 	font-weight: 700;
-
 }
 
 .left img, .right img{
 	object-fit: cover;
-	width: 90%;
+	width: 95%;
 }
-
 
 .lines .post{
 	border-bottom: 1px solid rgb(0, 0, 0);
@@ -80,10 +78,6 @@ ol li::marker{
 	position: sticky;
 	top: 0;
 	background-color: white;
-}
-
-.nav{
-	display: ;
 }
 
 .nav ul, .navleft ul{
@@ -102,7 +96,7 @@ ol li::marker{
 	margin: 0 1em 0 0;
 }
 
-.nav ul li a:hover{
+.nav ul li a:hover, .navleft ul li a:hover{
 	color: red;
 }
 
@@ -110,28 +104,9 @@ ol li::marker{
 	display: none;
 }
 
-
 .content:target{
 	display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -153,6 +128,12 @@ ol li::marker{
 		background-color: rgba(233, 127, 78, 0);
 		width: 60%;
 		margin: 0 auto;
+	}
+	.navleft{
+		display: block;
+	}
+	.nav{
+		display: none;
 	}
 }
 
@@ -185,22 +166,34 @@ ol li::marker{
 
 @media only screen and (max-width: 800px) {
 	body{
-		background-color: rgba(242, 255, 0, 0.375);
-		width: 100%;
+		background-color: rgba(242, 255, 0, 0);
+		width: 98%;
 		margin: 0 auto;
+	}
+	.divide2 .left.instance1{
+		display: block;
 	}
 }
 
 @media only screen and (max-width: 600px) {
 	body{
 		background-color: rgba(247, 9, 9, 0);
-		width: 100%;
+		width: 98%;
 		margin: 0 auto;
+	}
+	.nav{
+		display: block;
+	}
+	.divide2 .left.instance1{
+		display: none;
+	}
+	.divide2.instance1{
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
 @media only screen and (max-width: 300px) {
 	body{
-		background-color: rgba(21, 255, 0, 0);
+		background-color: rgba(242, 255, 0, 0.969);
 	}	
 }

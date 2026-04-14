@@ -37,6 +37,7 @@ body{
 	font-size: 1.5em;
 	font-weight: 700;
 	margin: 0;
+	padding: 0;
 }
 
 .post{
@@ -120,15 +121,15 @@ ol li::marker{
 
 
 .divide2.instance1 {
-    display: flex;
-    align-items: flex-start;
+    1display: flex;
+    1align-items: flex-start;
 }
 
 .left.instance1 {
     position: sticky;
     top: 0;
-    height: 100vh; /* Keeps your sidebar from scrolling away */
-    width: 250px;  /* Adjust based on your design */
+    1height: 100vh; /* Keeps your sidebar from scrolling away */
+    1width: 250px;  /* Adjust based on your design */
 }
 
 /* 2. The magic for the image reveal */
@@ -136,17 +137,23 @@ ol li::marker{
     position: sticky;
     top: 0;
     z-index: 1; /* Sits at the bottom layer */
-    height: 5em /* Adjust how tall you want the image to be */
+    1height: 5em /* Adjust how tall you want the image to be */
     overflow: hidden;
 
-
-	transition: opacity 0.5s;
+	margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 0 !important;
 }
 
 .post.image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Prevents the image from stretching */
+    object-fit: cover;
+
+	display: block;
+    margin: 0;
 }
 
 /* 3. The content that slides OVER the image */
@@ -154,8 +161,9 @@ ol li::marker{
 .content .post.center {
     position: relative;
     z-index: 2;         /* Sits on top of the image */
-    background: white;  /* Important: Must have a color to hide the image below */
+    background: rgb(255, 255, 255);  /* Important: Must have a color to hide the image below */
     1padding: 20px;
+	
 }
 
 

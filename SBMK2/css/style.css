@@ -62,7 +62,7 @@ ol li::marker{
 
 .left img, .right img{
 	object-fit: cover;
-	width: 95%;
+	width: 100%;
 }
 
 .lines .post{
@@ -80,12 +80,17 @@ ol li::marker{
 	background-color: white;
 }
 
-.nav ul, .navleft ul{
-	list-style: none;
-}
-
 .navleft ul li{
 	margin: 0 0 1em 0;
+}
+
+.navleft ul li a{
+	margin: 0 0 1em 0;
+	display: block;
+}
+
+.nav ul, .navleft ul{
+	list-style: none;
 }
 
 .nav ul li{
@@ -93,7 +98,7 @@ ol li::marker{
 }
 
 .nav ul li a{
-	margin: 0 1em 0 0;
+	margin: 0 1em 1em 0;
 }
 
 .nav ul li a:hover, .navleft ul li a:hover{
@@ -108,9 +113,50 @@ ol li::marker{
 	display: block;
 }
 
+.image{
+	position: ;
+}
 
 
 
+.divide2.instance1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.left.instance1 {
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Keeps your sidebar from scrolling away */
+    width: 250px;  /* Adjust based on your design */
+}
+
+/* 2. The magic for the image reveal */
+.post.image {
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Sits at the bottom layer */
+    height: 5em /* Adjust how tall you want the image to be */
+    overflow: hidden;
+
+
+	transition: opacity 0.5s;
+}
+
+.post.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents the image from stretching */
+}
+
+/* 3. The content that slides OVER the image */
+.content .post.title, 
+.content .post.center {
+    position: relative;
+    z-index: 2;         /* Sits on top of the image */
+    background: white;  /* Important: Must have a color to hide the image below */
+    1padding: 20px;
+}
 
 
 

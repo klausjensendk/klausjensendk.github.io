@@ -54,7 +54,13 @@ body{
 	gap: 0 2em;
 }
 
-.right{
+.center.divide2{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr 6fr);
+	gap: 0 4em;
+}
+
+.right, .left{
 	margin: 0 0 1em 0;
 }
 
@@ -71,7 +77,7 @@ ol li::marker{
 	border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-.top, .nav, .center, .bottom{
+.top, .nav, .center, .bottom, .bottom1{
 	margin: 1em 0 1.2em 0;	
 	border-bottom: 1px solid rgb(0, 0, 0);
 }
@@ -116,7 +122,7 @@ ol li::marker{
 }
 
 .image{
-	position: ;
+	
 }
 
 
@@ -141,16 +147,12 @@ ol li::marker{
     1height: 5em /* Adjust how tall you want the image to be */
     overflow: hidden;
 
-	margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-	padding-bottom: 0;
-	margin-bottom: 0 !important;
+
 }
 
 .post.image img {
 	width: 100%;
-	height: 100%;
+	max-height: 250px;
     object-fit: cover;
 	aspect-ratio: 1/1;
 
@@ -173,6 +175,13 @@ ol li::marker{
 .bottom{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	gap: 0 1em;
+}
+
+.bottom1{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0 1em;
 }
 
 .bottompost{

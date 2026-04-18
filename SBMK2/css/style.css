@@ -36,8 +36,8 @@ body{
 .title{
 	font-size: 1.5em;
 	font-weight: 700;
-	margin: 0;
-	padding: 0;
+	1margin: 0;
+	1padding: 0;
 	text-transform: capitalize;
 }
 
@@ -51,7 +51,7 @@ body{
 .divide2{
 	display: grid;
 	grid-template-columns: repeat(1, 1fr 6fr);
-	gap: 0 2em;
+	gap: 0 1em;
 }
 
 .center.divide2{
@@ -180,13 +180,18 @@ ol li::marker{
 
 .bottom1{
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	gap: 0 1em;
 }
 
 .bottompost{
 	margin: 0 0 0.2em 0;
 }
+
+.bottom1 .bottompost .title{
+	height: 2em;
+}
+
 
 
 
@@ -273,6 +278,9 @@ ol li::marker{
 	}
 	.divide2.instance1{
 		grid-template-columns: repeat(1, 1fr);
+	}
+	.bottom1{
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 

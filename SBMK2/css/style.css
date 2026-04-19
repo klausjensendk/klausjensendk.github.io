@@ -34,19 +34,17 @@ body{
 }
 
 .title{
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: 700;
-	1margin: 0;
-	1padding: 0;
+	margin: 0;
+	padding: 0;
 	text-transform: capitalize;
 }
 
 .post{
-	margin: 0.5em 0;
-	padding: 0.3rem 0;
-	border-bottom: 1px solid rgba(206, 206, 206, 0);
+	margin: 0 0 0.5em 0;
+	padding: 0.5em 0;
 }
-.container{}
 
 .divide2{
 	display: grid;
@@ -61,11 +59,11 @@ body{
 }
 
 .right, .left{
-	margin: 0 0 1em 0;
+	margin: 0;
 }
 
 ol li::marker{
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .left img, .right img{
@@ -78,14 +76,18 @@ ol li::marker{
 }
 
 .top, .nav, .center, .bottom, .bottom1{
-	margin: 1em 0 1.2em 0;	
+	margin: 1em 0;
 	border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .navleft{
 	position: sticky;
 	top: 0;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.navleft ul, .nav ul{
+	list-style: none;
 }
 
 .navleft ul li{
@@ -97,16 +99,14 @@ ol li::marker{
 	display: block;
 }
 
-.nav ul, .navleft ul{
-	list-style: none;
-}
-
 .nav ul li{
-	display: inline;
+	margin: 0 1em 1em 0;
+	display: inline-block;
+
 }
 
 .nav ul li a{
-	margin: 0 1em 1em 0;
+	padding: 0.5em 0;
 }
 
 .nav ul li a:hover, .navleft ul li a:hover{
@@ -120,12 +120,6 @@ ol li::marker{
 .content:target{
 	display: block;
 }
-
-.image{
-	
-}
-
-
 
 .divide2.instance1 {
     1display: flex;
@@ -146,8 +140,6 @@ ol li::marker{
     z-index: 1; /* Sits at the bottom layer */
     1height: 5em /* Adjust how tall you want the image to be */
     overflow: hidden;
-
-
 }
 
 .post.image img {
@@ -169,12 +161,11 @@ ol li::marker{
     z-index: 2;         /* Sits on top of the image */
     background: rgb(255, 255, 255);  /* Important: Must have a color to hide the image below */
     1padding: 20px;
-	
 }
 
 .bottom{
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	gap: 0 1em;
 }
 
@@ -185,20 +176,29 @@ ol li::marker{
 }
 
 .bottompost{
-	margin: 0 0 0.2em 0;
+	margin: 0 0 0.5em 0;
+}
+
+.bottompost a:hover{
+	color: red;
 }
 
 .bottom1 .bottompost .title{
 	height: 2em;
 }
 
+.bottom .bottompost.title{
+	height: 2em;
+}
 
+.bottom .post .bottompost{
+	margin: 0 0 0.5em 0;
+	background-color: rgba(250, 235, 215, 0);
+}
 
-
-
-
-
-
+.copyright{
+	font-size: 0.7em;
+}
 
 
 
@@ -224,6 +224,9 @@ ol li::marker{
 	.nav{
 		display: none;
 	}
+	.bottom{
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 @media only screen and (max-width: 2000px) {
@@ -231,6 +234,9 @@ ol li::marker{
 		background-color: rgba(205, 78, 233, 0);
 		width: 60%;
 		margin: 0 auto;
+	}
+	.bottom{
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 

@@ -339,6 +339,9 @@ html{
 	.bottom1{
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.logo img{
+		width: 30%;
+	}
 }
 
 @media only screen and (max-width: 300px) {

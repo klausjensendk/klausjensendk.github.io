@@ -34,16 +34,25 @@ body{
 }
 
 .title{
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
 	text-transform: capitalize;
 }
 
+.hero{
+	font-size: 2em;
+}
+
 .post{
 	margin: 0 0 0.5em 0;
 	padding: 0.5em 0;
+	line-height: 1.4em;
+}
+
+.image{
+	box-shadow: 8px;
 }
 
 .divide2{
@@ -55,7 +64,13 @@ body{
 .center.divide2{
 	display: grid;
 	grid-template-columns: repeat(1, 1fr 6fr);
-	gap: 0 4em;
+	gap: 0 2em;
+}
+
+.divide3{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0 1em;
 }
 
 .right, .left{
@@ -83,7 +98,6 @@ ol li::marker{
 .navleft{
 	position: sticky;
 	top: 0;
-	background-color: rgba(255, 255, 255, 0);
 }
 
 .navleft ul, .nav ul{
@@ -97,12 +111,12 @@ ol li::marker{
 .navleft ul li a{
 	margin: 0 0 1em 0;
 	display: block;
+	font-size: 0.9em;
 }
 
 .nav ul li{
 	margin: 0 1em 1em 0;
 	display: inline-block;
-
 }
 
 .nav ul li a{
@@ -144,7 +158,7 @@ ol li::marker{
 
 .post.image img {
 	width: 100%;
-	max-height: 250px;
+	max-height: 350px;
     object-fit: cover;
 	aspect-ratio: 1/1;
 
@@ -193,16 +207,53 @@ ol li::marker{
 
 .bottom .post .bottompost{
 	margin: 0 0 0.5em 0;
-	background-color: rgba(250, 235, 215, 0);
 }
 
 .copyright{
 	font-size: 0.7em;
 }
 
+.logo img{
+	width: 10%;
+}
 
+/* xmas theme start*/
+#xmastheme_on *{
+	color: white;
+	border-color: white;
+	background-color: rgb(205, 24, 24);
+}
 
+html{
+	background-color: rgba(205, 24, 24, 0);
+}
 
+#xmastheme_on * a:hover{
+	color: green;
+}
+
+#themebox_on{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	
+	width: 100vw;
+	height: 30px;
+
+	background-repeat: repeat-x;
+	background-size: auto 30px;
+
+	margin */
+	margin: 0;
+
+	background-image: url("/images/topdecoration.png");
+}
+
+#themebox_on body{
+	margin: 2em 0 0 0;
+}
+/* xmas theme end*/
 
 
 
@@ -292,6 +343,6 @@ ol li::marker{
 
 @media only screen and (max-width: 300px) {
 	body{
-		background-color: rgba(242, 255, 0, 0.969);
+		background-color: rgba(242, 255, 0, 0);
 	}	
 }

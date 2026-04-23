@@ -41,6 +41,14 @@ body{
 	text-transform: capitalize;
 }
 
+.smalltitle{
+	font-size: 0.9em;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+
 .hero{
 	font-size: 2em;
 }
@@ -191,6 +199,11 @@ ol li::marker{
 
 .bottompost{
 	margin: 0 0 0.5em 0;
+}
+
+.bottompost img{
+	object-fit: cover;
+	object-position: 70% center;
 }
 
 .bottompost a:hover{

@@ -217,6 +217,23 @@ ol li::marker{
 	width: 10%;
 }
 
+input[type="checkbox"]:checked + label {
+	text-decoration: line-through;
+	color: #888;
+	transition: all 0.3s ease;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+	transform: scale(1.2);
+	display: none;
+}
+
+
+
+
+
+
 /* xmas theme start*/
 #xmastheme_on *{
 	color: white;

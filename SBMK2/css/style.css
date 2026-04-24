@@ -1,3 +1,7 @@
+:root {
+    --Kbgcolor: #0d5a76ee; 
+}
+
 *{
 	margin: 0; 
 	padding: 0;
@@ -25,6 +29,7 @@ body{
 	font-style: normal;
 	font-family: "TikTok Sans", sans-serif;
 	opacity: 0;
+	overflow-x: hidden;
 	animation: fadeIn 0.5s ease-in forwards;
 }
 
@@ -34,7 +39,7 @@ body{
 }
 
 .title{
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
@@ -71,7 +76,7 @@ body{
 
 .center.divide2{
 	display: grid;
-	grid-template-columns: repeat(1, 1fr 6fr);
+	grid-template-columns: repeat(1, 1.5fr 6fr);
 	gap: 0 2em;
 }
 
@@ -103,6 +108,23 @@ ol li::marker{
 	border-bottom: 1px solid rgb(0, 0, 0);
 }
 
+.wide{
+	position: absolute;
+	width: auto;
+	left: 0;
+	padding: 0 10%;
+	color: rgb(255, 255, 255);
+	background-color: var(--Kbgcolor, yellow);
+}
+
+.wide a{
+	color: white;
+}
+
+.wide .post img{
+	width: 20%;
+}
+
 .navleft{
 	position: sticky;
 	top: 0;
@@ -119,7 +141,9 @@ ol li::marker{
 .navleft ul li a{
 	margin: 0 0 1em 0;
 	display: block;
-	font-size: 0.9em;
+	font-size: 1em;
+	font-weight: 500;
+	text-transform: capitalize;
 }
 
 .nav ul li{
@@ -128,7 +152,12 @@ ol li::marker{
 }
 
 .nav ul li a{
-	padding: 0.5em 0;
+	padding: 0.5em 0.3em;
+	font-weight: 500;
+	font-size: 0.9em;
+	background-color: #ffeaea;
+	border-radius: 5px;
+	text-transform: capitalize;
 }
 
 .nav ul li a:hover, .navleft ul li a:hover{
@@ -143,7 +172,7 @@ ol li::marker{
 	display: block;
 }
 
-.divide2.instance1 {
+.divide2.instance1{
     1display: flex;
     1align-items: flex-start;
 }
@@ -173,7 +202,7 @@ ol li::marker{
 	display: block;
     margin: 0;
 
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 /* 3. The content that slides OVER the image */
@@ -197,14 +226,9 @@ ol li::marker{
 	gap: 0 1em;
 }
 
-.bottompost{
-	margin: 0 0 0.5em 0;
-}
 
-.bottompost img{
-	object-fit: cover;
-	object-position: 70% center;
-}
+
+
 
 .bottompost a:hover{
 	color: red;
@@ -216,14 +240,33 @@ ol li::marker{
 
 .bottom .bottompost.title{
 	height: 2em;
+	font-size: 1em;	
 }
 
-.bottom .post .bottompost{
-	margin: 0 0 0.5em 0;
+.bottom .bottompost.title{
+	height: 2em;
+	font-size: 1em;	
+}
+
+.bottom .bottompost a{
+	font-size: 1em;	
 }
 
 .copyright{
 	font-size: 0.7em;
+}
+
+.bottompost img{
+	object-fit: cover;
+	object-position: 70% center;
+}
+
+.bottom .bottompost{
+	margin: 0 0 0.5em 0;
+	font-size: 0.8em;
+}
+.bottom .bottompost a{
+	font-size: 1em;
 }
 
 .logo img{
@@ -274,7 +317,7 @@ html{
 	background-repeat: repeat-x;
 	background-size: auto 30px;
 
-	margin */
+	margin: ;
 	margin: 0;
 
 	background-image: url("/images/topdecoration.png");
@@ -308,6 +351,9 @@ html{
 	.bottom{
 		grid-template-columns: repeat(4, 1fr);
 	}
+	.wide{
+		padding: 0 20%;
+	}
 }
 
 @media only screen and (max-width: 2000px) {
@@ -330,24 +376,27 @@ html{
 
 @media only screen and (max-width: 1000px) {
 	body{
-		background-color: rgba(11, 197, 169, 0);
+		background-color: rgba(11, 197, 169, 0.746);
 	}
 }
 
 @media only screen and (max-width: 900px) {
 	body{
-		background-color: rgba(157, 5, 251, 0);
+		background-color: rgba(157, 5, 251, 0.73);
 	}
 }
 
 @media only screen and (max-width: 800px) {
 	body{
-		background-color: rgba(242, 255, 0, 0);
+		background-color: rgba(215, 225, 23, 0.871);
 		width: 98%;
 		margin: 0 auto;
 	}
 	.divide2 .left.instance1{
 		display: block;
+	}
+	.wide{
+		padding: 0 1%;
 	}
 }
 
@@ -371,6 +420,9 @@ html{
 	}
 	.logo img{
 		width: 30%;
+	}
+	.wide{
+		padding: 0 1%;
 	}
 }
 

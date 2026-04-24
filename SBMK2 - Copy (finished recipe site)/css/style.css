@@ -1,0 +1,433 @@
+:root {
+    --Kbgcolor: #0d5a76ee; 
+}
+
+*{
+	margin: 0; 
+	padding: 0;
+	font-size: 14px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+::selection {
+	color: rgb(0, 0, 0);
+	background: rgb(247, 251, 17);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	font-style: normal;
+	font-family: "TikTok Sans", sans-serif;
+	opacity: 0;
+	overflow-x: hidden;
+	animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+.title{
+	font-size: 1em;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+
+.smalltitle{
+	font-size: 0.9em;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+
+.hero{
+	font-size: 2em;
+}
+
+.post{
+	margin: 0 0 0.5em 0;
+	padding: 0.5em 0;
+	line-height: 1.4em;
+}
+
+.image{
+	box-shadow: 8px;
+}
+
+.divide2{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr 6fr);
+	gap: 0 1em;
+}
+
+.center.divide2{
+	display: grid;
+	grid-template-columns: repeat(1, 1.5fr 6fr);
+	gap: 0 2em;
+}
+
+.divide3{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0 1em;
+}
+
+.right, .left{
+	margin: 0;
+}
+
+ol li::marker{
+	font-weight: 500;
+}
+
+.left img, .right img{
+	object-fit: cover;
+	width: 100%;
+}
+
+.lines .post{
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.top, .nav, .center, .bottom, .bottom1{
+	margin: 1em 0;
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.wide{
+	position: absolute;
+	width: auto;
+	left: 0;
+	padding: 0 10%;
+	color: rgb(255, 255, 255);
+	background-color: var(--Kbgcolor, yellow);
+}
+
+.wide a{
+	color: white;
+}
+
+.wide .post img{
+	width: 20%;
+}
+
+.navleft{
+	position: sticky;
+	top: 0;
+}
+
+.navleft ul, .nav ul{
+	list-style: none;
+}
+
+.navleft ul li{
+	margin: 0 0 1em 0;
+}
+
+.navleft ul li a{
+	margin: 0 0 1em 0;
+	display: block;
+	font-size: 1em;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.nav ul li{
+	margin: 0 1em 1em 0;
+	display: inline-block;
+}
+
+.nav ul li a{
+	padding: 0.5em 0.3em;
+	font-weight: 500;
+	font-size: 0.9em;
+	background-color: #ffeaea;
+	border-radius: 5px;
+	text-transform: capitalize;
+}
+
+.nav ul li a:hover, .navleft ul li a:hover{
+	color: red;
+}
+
+.content{
+	display: none;
+}
+
+.content:target{
+	display: block;
+}
+
+.divide2.instance1{
+    1display: flex;
+    1align-items: flex-start;
+}
+
+.left.instance1 {
+    position: sticky;
+    top: 0;
+    1height: 100vh; /* Keeps your sidebar from scrolling away */
+    1width: 250px;  /* Adjust based on your design */
+}
+
+/* 2. The magic for the image reveal */
+.post.image {
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Sits at the bottom layer */
+    1height: 5em /* Adjust how tall you want the image to be */
+    overflow: hidden;
+}
+
+.post.image img {
+	width: 100%;
+	max-height: 350px;
+    object-fit: cover;
+	aspect-ratio: 1/1;
+
+	display: block;
+    margin: 0;
+
+	border-radius: 5px;
+}
+
+/* 3. The content that slides OVER the image */
+.content .post.title, 
+.content .post.center {
+    position: relative;
+    z-index: 2;         /* Sits on top of the image */
+    background: rgb(255, 255, 255);  /* Important: Must have a color to hide the image below */
+    1padding: 20px;
+}
+
+.bottom{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0 1em;
+}
+
+.bottom1{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0 1em;
+}
+
+
+
+
+
+.bottompost a:hover{
+	color: red;
+}
+
+.bottom1 .bottompost .title{
+	height: 2em;
+}
+
+.bottom .bottompost.title{
+	height: 2em;
+	font-size: 1em;	
+}
+
+.bottom .bottompost.title{
+	height: 2em;
+	font-size: 1em;	
+}
+
+.bottom .bottompost a{
+	font-size: 1em;	
+}
+
+.copyright{
+	font-size: 0.7em;
+}
+
+.bottompost img{
+	object-fit: cover;
+	object-position: 70% center;
+}
+
+.bottom .bottompost{
+	margin: 0 0 0.5em 0;
+	font-size: 0.8em;
+}
+.bottom .bottompost a{
+	font-size: 1em;
+}
+
+.logo img{
+	width: 10%;
+}
+
+input[type="checkbox"]:checked + label {
+	text-decoration: line-through;
+	color: #888;
+	transition: all 0.3s ease;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+	transform: scale(1.2);
+	display: none;
+}
+
+
+
+
+
+
+/* xmas theme start*/
+#xmastheme_on *{
+	color: white;
+	border-color: white;
+	background-color: rgb(205, 24, 24);
+}
+
+html{
+	background-color: rgba(205, 24, 24, 0);
+}
+
+#xmastheme_on * a:hover{
+	color: green;
+}
+
+#themebox_on{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	
+	width: 100vw;
+	height: 30px;
+
+	background-repeat: repeat-x;
+	background-size: auto 30px;
+
+	margin: ;
+	margin: 0;
+
+	background-image: url("/images/topdecoration.png");
+}
+
+#themebox_on body{
+	margin: 2em 0 0 0;
+}
+/* xmas theme end*/
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 2800px) {
+	body{
+		background-color: rgba(233, 127, 78, 0);
+		width: 60%;
+		margin: 0 auto;
+	}
+	.navleft{
+		display: block;
+	}
+	.nav{
+		display: none;
+	}
+	.bottom{
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.wide{
+		padding: 0 20%;
+	}
+}
+
+@media only screen and (max-width: 2000px) {
+	body{
+		background-color: rgba(205, 78, 233, 0);
+		width: 60%;
+		margin: 0 auto;
+	}
+	.bottom{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	body{
+		width: 80%;
+		background-color: rgba(188, 188, 27, 0);
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	body{
+		background-color: rgba(11, 197, 169, 0.746);
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	body{
+		background-color: rgba(157, 5, 251, 0.73);
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	body{
+		background-color: rgba(215, 225, 23, 0.871);
+		width: 98%;
+		margin: 0 auto;
+	}
+	.divide2 .left.instance1{
+		display: block;
+	}
+	.wide{
+		padding: 0 1%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	body{
+		background-color: rgba(247, 9, 9, 0);
+		width: 98%;
+		margin: 0 auto;
+	}
+	.nav{
+		display: block;
+	}
+	.divide2 .left.instance1{
+		display: none;
+	}
+	.divide2.instance1{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.bottom1{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.logo img{
+		width: 30%;
+	}
+	.wide{
+		padding: 0 1%;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	body{
+		background-color: rgba(242, 255, 0, 0);
+	}	
+}
